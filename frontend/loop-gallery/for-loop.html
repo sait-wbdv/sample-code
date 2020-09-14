@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Flexbox Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .gallery img {
+      margin: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <main class="gallery">
+  </main>
+  <script>
+    const imgList = [237, 433, 577, 582, 593, 659, 718, 783, 790, 837, 1024, 1025, 1074, 1084]; 
+
+    let imgTemplate = ''; 
+    
+    const gallery = document.querySelector('.gallery'); 
+
+    console.log(gallery);
+
+    // https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code
+
+    for (let i = 0; i < imgList.length; i++) {
+
+      imgTemplate += `<img src="https://picsum.photos/id/${imgList[i]}/250/250" alt="Random Lorem Picsum">`;
+
+    }
+
+    gallery.innerHTML = imgTemplate;
+
+  </script>  
+</body>
+</html>

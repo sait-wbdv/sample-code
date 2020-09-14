@@ -1,0 +1,46 @@
+/* Import a fancy font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+
+/********************/
+/* Making it pretty */    
+/********************/
+
+body {
+  
+  background-color: lightgrey;
+  margin: 0;
+
+  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+ul {
+  background-color: white;
+  border: 1px solid black;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+  
+  border: 1px solid black;
+}
+
+a {
+  padding: 0.5em;
+  text-decoration: none;
+  color: indigo;
+}
+
+a:hover {
+  background-color: papayawhip;
+}
+
+a {
+  display: block;
+}
+

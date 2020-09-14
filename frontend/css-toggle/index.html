@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Toggle</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .fancy-bg {
+      background: rebeccapurple;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn">Toggle</button>
+  <script>
+    const body = document.querySelector('body');
+    const button = document.querySelector('.btn');
+    
+    function eventHandler() {
+
+      body.classList.toggle('fancy-bg');
+
+    }
+
+    button.addEventListener("click", eventHandler);
+
+  </script>
+</body>
+</html>

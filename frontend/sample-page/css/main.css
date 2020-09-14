@@ -1,0 +1,54 @@
+
+/* Header Section  */
+header {
+  display: flex;
+  justify-content: flex-start;
+  
+  margin: 0;
+  padding-left: 1em;
+  
+  background-color: rebeccapurple;
+
+}
+
+header h1 {
+  margin: 0;
+  padding: .5em;
+}
+
+header img {
+  width: 3em;
+}
+
+/* Footer Section */
+
+footer {
+  padding: 1em;
+
+  background-color: grey;
+  color: white;
+}
+
+
+/* Main Section */
+
+main {
+  padding: 0 1em;
+}
+
+
+main img {
+  width: 300px;
+  
+  float: left;
+  
+  border: 1px solid black;
+  
+  border-radius: 50%;
+  
+  shape-outside: circle(50%);
+  
+  margin-left: -150px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}

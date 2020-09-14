@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Hamburger Menu Toggle</title>
+  <!-- Non-relevant styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    nav ul {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    @media (orientation: landscape) {
+      nav ul {
+        display: flex;
+      }
+
+      nav ul li {
+        flex: auto;
+      }
+
+      nav button {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <button class="btn">Menu Toggle</button>
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const button = document.querySelector('.btn');
+    const menu = document.querySelector('nav ul');
+
+    function eventHandler() {
+      menu.classList.toggle('visible');
+    }
+
+    button.addEventListener('click', eventHandler);
+
+  </script>
+</body>
+</html>

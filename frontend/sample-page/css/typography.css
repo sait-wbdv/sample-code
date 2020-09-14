@@ -1,0 +1,39 @@
+/* Import our font */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@300;400&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+
+  font-size: 18px; 
+  
+  line-height: 1.7; 
+}
+
+/* heading text */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+
+header h1, 
+header h2, 
+header h3,
+header h4,
+header h5,
+header h6 {
+  font-variant: small-caps;
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+.text-box {
+  max-width: 75ch;
+}
+
+.justify {
+  text-align: justify;
+}
