@@ -3,29 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Horizontal Navigation with Hover/Active States</title>
+  <title>Simple Horizontal Navigation with Hover/Active/Current States</title>
   <style>
 
     /* Objective 1: Set dark background and light text when link is hovered. Use HSL to ensure contrast ratio and colour harmony. */
-    nav a:hover {
-      background-color: hsl(270deg, 100%, 20%);
-      color: hsl(60deg, 100%, 80%);
-    }
 
     /* Objective 2: Set bright background and dark text on button activation. Use HSL to ensure contrast ratio and colour harmony. */
-    nav a:active {
-      background-color: hsl(60deg, 100%, 80%);
-      color: hsl(270deg, 100%, 20%);
-    }
+
 
     /* Objective 3: Include styles for links to the current page. For simplicity, you can use the active declarations above and target the link(s) with a class selector. */
-    nav a.current {
-      background-color: hsl(60deg, 100%, 80%);
-      color: hsl(270deg, 100%, 20%);
-    }
+
 
     /* Resets and Setup */
-    /* See: https://sait-wbdv.github.io/sample-code/frontend/heros/hero-image/ */
+    /* See: https://sait-wbdv.github.io/sample-code/frontend/navigation/basic-horizontal/ */
     body {
       margin: 0;
 
