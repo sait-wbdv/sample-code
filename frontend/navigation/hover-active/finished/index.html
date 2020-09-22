@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Horizontal Navigation with Hover/Active States</title>
+  <style>
+
+    /* Objective 1: Set dark background and light text when link is hovered. Use HSL to ensure contrast ratio and colour harmony. */
+    nav a:hover {
+      background-color: hsl(270deg, 100%, 20%);
+      color: hsl(60deg, 100%, 80%);
+    }
+
+    /* Objective 2: Set bright background and dark text on button activation. Use HSL to ensure contrast ratio and colour harmony. */
+    nav a:active {
+      background-color: hsl(60deg, 100%, 80%);
+      color: hsl(270deg, 100%, 20%);
+    }
+
+    /* Objective 3: Include styles for links to the current page. For simplicity, you can use the active declarations above and target the link(s) with a class selector. */
+    nav a.current {
+      background-color: hsl(60deg, 100%, 80%);
+      color: hsl(270deg, 100%, 20%);
+    }
+
+    /* Resets and Setup */
+    body {
+      margin: 0;
+
+      font-size: 24px;
+      font-variant: small-caps;
+      font-family: Trebuchet MS, Helvetica, sans-serif;
+      letter-spacing: 0.2em;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+
+      display: flex;
+    }
+
+    nav ul li {
+      flex: auto;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: indigo;
+
+      border: 1px solid grey;
+
+      display: block;
+      padding: 0.5em 1em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <!-- Objective 3: Add a class of "current" to ONE of the links below. -->
+      <li><a class="current" href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

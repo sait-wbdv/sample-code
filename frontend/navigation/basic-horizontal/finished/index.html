@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Naviation List</title>
+  <style>
+
+    /* Objective 1: Reset default list styles: remove bullets and left indent. */
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+
+    nav a {
+      /* Objective 2: Reset default link styles: remove underline, and change color. */
+      text-decoration: none;
+      color: indigo;
+
+      /* Objective 3: Add border to links (optional) */
+      border: 1px solid grey;
+
+      /* Objective 4: Increase the clickable area of the links using padding. */
+      display: block; /* tricky! */
+      padding: 0.5em 1em;
+    }
+
+    /* Objective 5: Display links horizontally using flexbox */
+    nav ul {
+      display: flex;
+    }
+
+    /* Objective 6: Add second menu - center the links in the middle of the page (horizontally). */
+    .centred ul {
+      justify-content: center;
+    }
+
+    /* Objective 7: Add third menu - space the links evenly. */
+    .spaced ul {
+      justify-content: space-evenly;
+    }
+
+    /* Objective 8: Add fourth menu - expand the links to fill up extra space. */
+    .grow ul li {
+      flex: auto;
+      text-align: center;
+    }
+
+    /* Resets and Side Code */
+    body {
+      margin: 0;
+
+      font-size: 24px;
+      font-variant: small-caps;
+      font-family: Trebuchet MS, Helvetica, sans-serif;
+      letter-spacing: 0.2em;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+  <nav class="centred">
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+  <nav class="spaced">
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>  
+  <nav class="grow">
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

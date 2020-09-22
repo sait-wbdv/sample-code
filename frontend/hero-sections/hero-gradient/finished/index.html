@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Hero Section</title>
+  <style>
+
+    main {
+      /* Obective 1: Create a flex container */
+      display: flex;
+
+      /* Obective 2: Set container height to full viewport height */
+      height: 100vh;
+
+      /* Objective 3: Position flex items (the heading) in top right corner of the viewport. */
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      /* Objective 4: Add CSS background image */
+      background-image: url('https://picsum.photos/id/1048/1200/1200');
+
+      /* Objective 5: Set image size to completely cover element background */
+      background-size: cover;
+
+      /* Objective 6: Position background image in the centre of the element */
+      background-position: center;
+
+      /* Objective 7: Place one or more gradients (with transparency) over top the background image. */
+      background-image: 
+        linear-gradient(220deg, goldenrod 50%, transparent 50%), 
+        linear-gradient(270deg, skyblue 50%, transparent 50%), 
+        url('https://picsum.photos/id/1023/1200/1200');
+
+      /* Objective 8: Position image in the lower left corner of the element. */
+      background-position: left bottom;
+    }  
+
+    /* Resets and Side Code */
+    body {
+      margin: 0;
+
+      font-size: 48px;
+      font-variant: small-caps;
+      font-family: Trebuchet MS, Helvetica, sans-serif;
+      letter-spacing: 0.2em;
+    }
+
+    h1 {
+      padding: 1em;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Perspective</h1>
+  </main>
+</body>
+</html>
