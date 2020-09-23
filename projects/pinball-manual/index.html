@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cradle to Drain: Be a Better Pinballer</title>
+  <style>
+    /* Mobile-first */
+    article {
+      /* Objective 1: Limit the maximum width of the container and centre it. */
+      max-width: 75ch;
+      margin: auto;
+
+      /* Objective 2: Centre content in the centre of the viewport. */
+      height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Objective 3: Using a media query, layout the image a caption left-to-right when the screen is in a landscape orientation. */
+    @media (min-aspect-ratio: 4/3) {
+      figure {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      /* Objective 4: Allow figure flex items to grow and shrink. */
+      figure > * {
+        flex: auto;
+      }
+
+      img, figcaption {
+        flex-basis: 40ch;
+      }
+
+      /* Extend the max-width of the top container */
+      article {
+        max-width: 80ch;
+      }
+    }
+
+    /* Resets */
+    body {
+      margin: 0;
+    }
+
+    /* Make it Pretty */
+    body {
+      font-size: 24px;
+      /* font-size: clamp(24px, 3vw, 32px); */
+    }
+
+    h2 {
+      margin: 0.5em;
+
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    figure {
+      margin: 0 10vw;
+    }
+
+    img {
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h2>Cradle Often</h2>
+    <figure>
+      <img src="assets/images/cradle.svg" alt="Illustration of a Ball Cradle">
+      <figcaption>The cradle is the highest level of control available in the game. It’s a haven of sipped drinks and quiet contemplation. Best of all, shots from a cradle release are slower and more consistent than from other feeds. The cradle is the third feed.</figcaption>
+    </figure>  
+  </article>  
+</body>
+</html>
