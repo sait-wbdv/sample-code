@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4:3 orientation</title>
+  <style>
+    /* Objective 1: Set default styles. In this case, styles for landscape narrow than 4:3 aspect ratio (most likely tablet or mobile). */
+    body {
+      background-color: grey;
+    }
+
+    @media (min-aspect-ratio: 4/3) {
+      /* Objective 2: Override default styles when screen is wider than it is tall. */
+      body {
+        background-color: firebrick;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
