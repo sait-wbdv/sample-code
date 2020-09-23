@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cradle to Drain: Be a Better Pinballer</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <style>
     /* Mobile-first */
     article {
-      /* Objective 1: Limit the maximum width of the container and centre it. */
+      /* Limit the maximum width of the container and centre it. */
       max-width: 75ch;
       margin: auto;
 
-      /* Objective 2: Centre content in the centre of the viewport. */
+      /* Centre content in the centre of the viewport. */
       height: 100vh;
 
       display: flex;
@@ -19,7 +21,7 @@
       justify-content: center;
     }
 
-    /* Objective 3: Using a media query, layout the image a caption left-to-right when the screen is in a landscape orientation. */
+    /* Using a media query, layout the image a caption left-to-right when the screen is in a landscape orientation. */
     @media (min-aspect-ratio: 4/3) {
       figure {
         display: flex;
@@ -27,7 +29,7 @@
         gap: 2rem;
       }
 
-      /* Objective 4: Allow figure flex items to grow and shrink. */
+      /* Allow figure flex items to grow and shrink. */
       figure > * {
         flex: auto;
       }
@@ -50,13 +52,16 @@
     /* Make it Pretty */
     body {
       font-size: 24px;
-      /* font-size: clamp(24px, 3vw, 32px); */
+      font-size: clamp(24px, 3vw, 36px);
+
+      font-family: 'Open Sans', Helvetica, sans-serif;
     }
 
     h2 {
       margin: 0.5em;
 
       font-size: 3rem;
+      font-family: 'Open Sans Condensed', Helvetica, sans-serif;
       text-align: center;
     }
 
