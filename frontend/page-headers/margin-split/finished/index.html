@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Horizontal Navigation with Hover/Active States</title>
+  <style>
+    /* Objective 2: Create a nested flexbox by making the `nav` element on a container. */
+    nav {
+      display: flex;
+    }
+
+    /* Objective 3: Align the unordered list ot the right side of the nav element */
+    nav ul {
+      margin-left: auto;
+    }
+
+    /* Objective 3: Change the selectors in Resets and Setup below so that your anchor element styles only apply to the unordered list. We will style the home link in another lesson. */
+
+    /* Resets and Setup */
+    /* See: https://sait-wbdv.github.io/sample-code/frontend/heros/hover-active/ */
+    body {
+      margin: 0;
+
+      font-size: 24px;
+      font-variant: small-caps;
+      font-family: Trebuchet MS, Helvetica, sans-serif;
+      letter-spacing: 0.2em;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      display: flex;
+    }
+
+    nav ul li {
+      text-align: center;
+    }
+
+    nav ul a {
+      text-decoration: none;
+      color: indigo;
+
+      border: 1px solid grey;
+
+      display: block;
+      padding: 0.5em 1em;
+    }
+
+    nav ul a:hover {
+      background-color: hsl(270deg, 100%, 20%);
+      color: hsl(60deg, 100%, 80%);
+    }
+
+    nav ul a:active {
+      background-color: hsl(60deg, 100%, 80%);
+      color: hsl(270deg, 100%, 20%);
+    }
+
+    nav ul a.current {
+      background-color: hsl(60deg, 100%, 80%);
+      color: hsl(270deg, 100%, 20%);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <!-- Add a Home link OUTSIDE and BEFORE the unordered list -->
+    <a href="#">Home</a>
+    <ul>
+      <li><a class="current" href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

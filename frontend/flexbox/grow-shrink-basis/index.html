@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Grow, Shrink and Basis</title>
+  <style>
+    main {
+      display: flex;
+    }
+
+    main div {
+      flex: auto;
+    }
+
+    .one {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 25ch;
+    }
+
+    .two {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 25ch;
+    }
+
+    .three {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 25ch;
+    }
+
+    /* Resets and Setup */
+    main {
+      background-color: #ccc;
+      width: 75vw;
+      height: 25vh;
+      padding: 1em;
+      margin: 25vh auto 0;
+    }
+
+    div {
+      background-color: rebeccapurple;
+      padding: 0.5em;
+      margin: 0.5em;
+      color: white;
+      
+    }
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="one">Flex Item 1</div>
+    <div class="two">Flex Item 2</div>
+    <div class="three">Flex Item 3</div>
+  </main>
+</body>
+</html>
