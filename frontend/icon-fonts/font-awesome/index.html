@@ -6,79 +6,15 @@
   <title>Basic Icon Fonts with Font Awesome</title>
   <!-- See: https://cdnjs.com/libraries/font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-  <style>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/main.css">
 
-    /* TODO: Migrate to reset.css*/
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    /* TODO: Generalize to a .fullvh class. */
-    /* TODO: Create a .sticky class for footers. */
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-
-      height: 100vh;
-    }
-
-    
-    main {
-      /* TODO: Add to .sticky */
-      flex-grow: 1;
-
-      /* TODO: Generalize to .vp-centre */
-      display: flex;
-    }
-
-    main > * {
-      /* TODO: Generalize to .vp-centre */
-      margin: auto;
-
-      /* Genralize to an icon gallery? */
-      max-width: 600px;
-    }
-
-    ul {
-      /* TODO: Generalize to a .list-reset */
-      list-style-type: none;
-      padding-left: 0;
-
-      /* Utility class for flex gallery? */
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3em;
-    }
-
-    .fas, .fab {
-      font-size: 100px;
-      color: rebeccapurple;
-    }
-
-    .fab {
-      color: skyblue;
-    }
-
-    footer {
-      /* Utility class for footers? */
-      padding: 1em;
-
-      font-size: 50px;
-      text-align: center;
-
-      background-color: lightgrey;
-    }
-
-  </style>
 </head>
 <body>
-  <div class="wrapper">
-    <main>
-      <ul>
+  <div class="wrapper full-vh">
+    <main class="vp-centre full-vh">
+      <ul class="list-reset">
         <li><i class="fas fa-camera"></i></li>
         <li><i class="fas fa-bezier-curve"></i></li>
         <li><i class="fas fa-bullhorn"></i></li>

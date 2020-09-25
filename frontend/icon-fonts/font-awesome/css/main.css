@@ -1,0 +1,36 @@
+main > * {
+  /* Genralize to an icon gallery? */
+  max-width: 600px;
+}
+main ul {
+
+  /* Utility class for flex gallery? */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.fas, .fab {
+  font-size: 100px;
+  color: rebeccapurple;
+}
+
+.fab {
+  color: skyblue;
+}
+
+footer {
+  /* Utility class for footers? */
+  padding: 1em;
+
+  font-size: 50px;
+  text-align: center;
+
+  background-color: lightgrey;
+}
+
+/* Create a .sticky class for footers? */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
