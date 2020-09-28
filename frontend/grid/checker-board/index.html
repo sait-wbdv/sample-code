@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checker Patterns with CSS Grid</title>
+  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/css/v0/reset.css">
+  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/css/v0/utilities.css">
+  <style>
+    ul {
+      border: 1px solid black;
+
+      display: grid;
+      grid-template-columns: repeat(3, 20vmin);
+    }
+
+    li {
+      height: 20vmin;
+    }
+
+    li:nth-child(even) {
+      background-color: black;
+    }
+  </style>
+</head>
+<body class="full-vh vp-centre">
+  <ul class="list-reset">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>
