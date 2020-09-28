@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Page Layout with CSS Grid</title>
+  <!-- Add generic styles -->
+  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/css/v0/reset.css">
+  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/fonts/roboto-cond-bold_cabin.css">
+
+  <!-- Make it pretty -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Lesson Objectives -->
+  <style>
+    /* Create a grid container */
+    .wrapper {
+      max-width: 940px;
+      margin: 0 auto;
+
+      display: grid;
+      grid-gap: 1rem;
+    }
+
+    header, footer {
+      /* Make items span both columns */
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>My header</header>
+    <aside>Sidebar</aside>
+    <main>
+      <h1>2 column, header and footer</h1>
+      <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+    </main>
+    <footer class="footer">My footer</footer>
+  </div>
+</body>
+</html>
