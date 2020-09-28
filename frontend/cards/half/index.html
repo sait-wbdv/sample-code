@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1x2 Card: Two items sharing equal width</title>
+  <style>
+    article {
+      display: flex;
+
+      max-width: 800px;
+    }
+
+    article > * {
+      flex: auto;
+    }
+
+    img {
+      flex-grow: 1
+    }
+
+    p {
+      flex-basis: 40ch;
+      flex-grow: 2;
+    }
+
+    /* Make it pretty */
+    body {
+      font-size: 36px;
+    }
+
+    article {
+      margin: 5vh auto;
+    }
+
+    p {
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <img src="https://picsum.photos/500/500" alt="Random Lorem Picsum Image">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eos facere, laboriosam quidem quod ad explicabo necessitatibus doloribus earum repellendus?</p>
+  </article>
+</body>
+</html>

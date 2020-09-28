@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1x3 Content Block of Cards</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      margin: 1em auto;
+      min-width: 30ch;
+      max-width: 40ch;
+      
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    /******************/
+    /* Make it Pretty */
+    /******************/
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .card {  
+      border: 1px solid grey;
+      border-radius: 1em;
+      padding: 1em;
+    }
+
+    img {
+      padding-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meet the Team</h1>
+  <section class="container">
+    <article class="card">
+      <img src="https://picsum.photos/id/237/300" alt="Puppy">
+      <figcaption>
+        <h2>Lucifer, CEO</h2>
+        <p>Lucifer's heart is as black as his coat (but not as black as the company's latest quarterly figures).
+        </p>
+      </figcaption>
+    </article>
+    <article class="card">
+      <img src="https://picsum.photos/id/1024/300" alt="Bird">
+      <figcaption>
+        <h2>Shirley, Finance</h2>
+        <p>Nothing flies higher than Shirley, besides profits.</p>
+      </figcaption>
+    </article>
+    <article class="card">
+      <img src="https://picsum.photos/id/1074/300" alt="Cat">
+      <div>
+        <h2>Morgan, Sales</h2>
+        <p>Morgan believes the most important part of a well-balanced diet is commissions.</p>
+      </div>
+      <footer>
+        
+      </footer>
+    </article>
+  </section>
+</body>
+</html>
