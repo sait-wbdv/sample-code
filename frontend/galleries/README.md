@@ -24,4 +24,4 @@ Source: [Adaptive Photo Layout with Flexbox](https://css-tricks.com/adaptive-pho
 [Demo](grid-auto-fill)
 
 ### Activities
-1. The above gallery does not support mobile devices. Using one or more media queries, layout the images in a single column on mobile devices.
+1. TBA
