@@ -1,0 +1,19 @@
+/* Make it Pretty */
+header {
+  background: rebeccapurple;
+  padding: 1em;
+  color: white;
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  width: 50ch;
+}
+
+footer {
+  background: grey;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
