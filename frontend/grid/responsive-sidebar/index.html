@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Page Layout with CSS Grid</title>
+  <!-- Add generic styles -->
+  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/css/v0/reset.css">
+  <link rel="stylesheet" href="https://sait-wbdv.github.io/sample-code/assets/fonts/roboto-cond-bold_cabin.css">
+
+  <!-- Make it pretty -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Lesson Objectives -->
+  <style>
+
+    .wrapper > * {
+      /* margin: 1rem auto; */
+      margin-bottom: 1rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Mobile-first -> `min-width` */
+    @media screen and (min-width: 600px) {
+      /* Create a grid container */
+      .wrapper {
+        max-width: 940px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-gap: 1rem;
+      }
+      nav ul {
+        display: block;
+      }
+
+      header, footer {
+        /* Make items span both columns */
+        grid-column: span 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>My header</header>
+    <aside>
+      <nav>
+        <ul>
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+          <li>four</li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1>2 column, header and footer</h1>
+      <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+    </main>
+    <footer>My footer</footer>
+  </div>
+</body>
+</html>
