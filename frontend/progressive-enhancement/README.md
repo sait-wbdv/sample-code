@@ -32,7 +32,7 @@ See: [Punnet Square](https://en.wikipedia.org/wiki/Punnett_square) for an exampl
 ---
 
 ## 4. CSS Overrides with flexbox and viewport units
-[Demo](hero)
+[Demo](flex-viewport)
 
 ### Activity: Browser support bug hunt
 1. Choose any of the projects you've created in this course or choose an example project from the `sample-code` repo.
