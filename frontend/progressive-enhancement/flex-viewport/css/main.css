@@ -1,0 +1,58 @@
+/* CSS is for Presentation */
+/* Import our font */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@300;400&display=swap');
+
+/* Floating text with `shape-outside` */
+.triangle {
+  float: right;
+  margin-right: -100px;
+
+  /* Mask part of the image */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+
+  /* Float text around the clipped image using the same shape. */
+  shape-outside: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.polygon {
+  float: left;
+  margin: 1rem;
+  margin-left: -100px;
+
+  /* Mask part of the image */
+  clip-path: polygon(4% 4%, 72% 10%, 100% 37%, 80% 58%, 92% 75%, 53% 96%, 2% 98%);
+  
+  /* Float text around the clipped image using the same shape. */
+  shape-outside: polygon(4% 4%, 72% 10%, 100% 37%, 80% 58%, 92% 75%, 53% 96%, 2% 98%);
+}
+
+
+/* Make it pretty */
+/* Fonts */
+body {
+  /* Set our base body font */
+  font-family: 'Karla', sans-serif;
+  
+  /* Readable text is a combination of: */
+  /* font size, default is usually 16px */
+  font-size: 18px; 
+  
+  /* line-height (called leading in print design); browser default is usually 1.2. Try for a minimum of 1.5, max should be less than 2 */
+  line-height: 1.5; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+/* Layout */
+main {
+  /* line length: max for print should be 80-95 characters; for web: aim for 75 or less */ 
+  width: 80vw;
+  max-width: 75ch;
+  
+  /* Center the text on screen; this assumes the element is less than 100% of the parent element. */
+  margin: auto;
+
+}
