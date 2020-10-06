@@ -58,6 +58,9 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
     ">
     ```
 
+    **Consideration for Chrome**: It will load a larger image if you increase the viewport but will _not_ load a smaller image if you decrease the viewport.
+    {:.notice--warning}
+
 4. Add support for retina displays using the `x` notation. Swap out a larger image on mobile if the display is high resolution.
 
     ```html
