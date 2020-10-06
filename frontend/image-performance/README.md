@@ -34,8 +34,8 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
 
 ---
 
-### Optimize network bandwidth with `srcset` attribute
-1. Assign an optimal viewport width for each of the images widths located in the [images](images) directory:
+### Optimize image bandwidth with `srcset`
+1. Assign an optimal viewport width for each of the images widths located in the [images](https://github.com/sait-wbdv/sample-code/tree/master/frontend/image-performance/images) directory:
     - `sm`: `500px`
     - `md`: `1000px`
     - `lrg`: `2000px`
@@ -79,4 +79,4 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
 
 --- 
 
-### Manage network tasks with native lazy loading
+### Manage network resources with native lazy loading
