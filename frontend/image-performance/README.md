@@ -16,7 +16,7 @@ Optimize the images in the above webpage.
 ---
 
 ### Reduce file size with WebP
-Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`](images) starting with the `lrg`. 
+Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`](https://github.com/sait-wbdv/sample-code/tree/master/frontend/image-performance/images) starting with the `lrg`. 
 
 **See [Squoosh Cheatsheet](https://sait-wbdv.github.io/cheatsheets/squoosh)**
 
