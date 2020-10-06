@@ -61,25 +61,11 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
     **Consideration for Chrome**: It will load a larger image if you increase the viewport but will _not_ load a smaller image if you decrease the viewport.
     {:.notice--warning}
 
-4. Add support for retina displays using the `x` notation. Swap out a larger image on mobile if the display is high resolution.
-
-    ```html
-    <img 
-      src="default.jpg" 
-      alt="some image" 
-      srcset="
-        small.jpg 500w,
-        medium.jpg 2x,
-        medium.jpg 1000w,
-        large.jpg 2000w
-    ">
-    ```
-5. Deploy your page to GH Pages and test your code on a real phone.
-
----
-
-### Set a default image width with `sizes` attribute
+4. Deploy your page to GH Pages and test your code on a real phone.
 
 --- 
 
-### Manage network resources with native lazy loading
+### Improving network performance with native lazy loading
+1. Baseline test of the starter page Performance.
+2. Add `loading="lazy"` to any `img` element that is "below the fold".
+3. Comparison test of the lazy loading page Performance.
