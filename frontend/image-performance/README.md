@@ -4,12 +4,16 @@
 ## Tasks
 Optimize the images in the above webpage.
 
+---
+
 ### Reduce "jank" with image `width` and `height` attributes
 1. For each image displayed in the project, locate/record the `width` and `height` of the file.
 2. Add `width` and `height` attributes to their respective `img` tags in the project.
 3. Reload the page to ensure each `img` has been marked up correctly.
 4. Purposely break your image paths by deleting a character from the `src` attribute.
 5. Reload your page, to confirm  the browser is recognizing your `width` and `height` attributes. There should be an empty in the page layout that is `width` x `height`.
+
+---
 
 ### Reduce file size with WebP
 Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`](images) starting with the `lrg`. 
@@ -18,8 +22,15 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
 
 ---
 
-### Set a lower fallback image size
-Change the `src` attribute on the images in the project to use an image size lower than the `lrg` size. Can you get away with `sm`?
+### Define minimally responsive images
+1. Set a `max-width` of `100%` on your images:
+
+    ```css
+    img {
+      max-width: 100%;
+    }
+    ```
+2. Change the `src` attribute on the images in the project to use an image size lower than the `lrg` size. Can you get away with `sm`?
 
 ---
 
