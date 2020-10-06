@@ -16,8 +16,12 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
 
 **See [Squoosh Cheatsheet]({{site.baseurl}}/cheatsheets/squoosh)**
 
+---
+
 ### Set a lower fallback image size
 Change the `src` attribute on the images in the project to use an image size lower than the `lrg` size. Can you get away with `sm`?
+
+---
 
 ### Optimize network bandwidth with `srcset` attribute
 1. Assign an optimal viewport width for each of the images widths located in the [images](images) directory:
@@ -29,9 +33,39 @@ Change the `src` attribute on the images in the project to use an image size low
     ```html
     <img src="default.jpg" alt="some image" srcset="small.jpg 500w">
     ```
+
 3. Repeat for the other image sizes, separated by commas. Don't be afraid to add line breaks and indentation to make your code more readable.
-4. 
+
+    ```html
+    <img 
+      src="default.jpg" 
+      alt="some image" 
+      srcset="
+        small.jpg 500w,
+        medium.jpg 1000w,
+        large.jpg 2000w
+    ">
+    ```
+
+4. Add support for retina displays using the `x` notation. Swap out a larger image on mobile if the display is high resolution.
+
+    ```html
+    <img 
+      src="default.jpg" 
+      alt="some image" 
+      srcset="
+        small.jpg 500w,
+        medium.jpg 500w 2x,
+        medium.jpg 1000w,
+        large.jpg 2000w
+    ">
+    ```
+5. Deploy your page to GH Pages and test your code on a real phone.
+
+---
 
 ### Set a default image width with `sizes` attribute
+
+--- 
 
 ### Manage network tasks with native lazy loading
