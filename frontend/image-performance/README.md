@@ -69,7 +69,7 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
       alt="some image" 
       srcset="
         small.jpg 500w,
-        medium.jpg 500w 2x,
+        medium.jpg 2x,
         medium.jpg 1000w,
         large.jpg 2000w
     ">
