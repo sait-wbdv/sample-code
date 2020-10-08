@@ -10,7 +10,7 @@ Source: [How to Scale SVG](https://css-tricks.com/scale-svg/)
   <dt>Presentational Attributes</dt>
   <dd><code>svg</code> attributes, such as <code>fill</code> and <code>stroke</code>, that can be overridden by CSS.</dd>
   <dt>Precision</dt>
-  <dd>An <code>svg</code> term for the number of decimal places that are used to place objects (among other things) within the <code>viewBox</code>.
+  <dd>An <code>svg</code> term for the number of decimal places that are used to place objects (among other things) within the <code>viewBox</code></dd>.
 </dl>
 
 ---
