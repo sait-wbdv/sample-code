@@ -31,6 +31,7 @@ Source: [How to Scale SVG](https://css-tricks.com/scale-svg/)
 - `preserveAspectRatio` can be set to `none` if you don't want the browser to respect the aspect ratio set by the `viewBox`. Otherwise, the browser will try its best to not violate the aspect ratio. 
 - `width` and `height` attributes set an optional default size for the `svg` that can be overridden with CSS.
 - `svg` is its own specification with its own style properties. Although you can style them with CSS, you need to use the proper `svg` properties. For example, use `fill` instead of `background-color`.
+- A lower precision will result in a smaller file size but very low values might affect the detail of your designs.
 
 ---
 
