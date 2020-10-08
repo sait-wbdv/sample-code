@@ -28,6 +28,7 @@
     - Does it have a `viewBox`?
     - Are the styles in a `style` element, assigned as an attribute or an inline style?
 5. Try different export settings and repeat. Are there any differences in the exports?
+6. Decide on a final format and optimize it with [SVGOMG](https://jakearchibald.github.io/svgomg/).
 
 ### Activity 2: SVG in HTML
 Take a design from yesterdays session and the following [Starter Code](starter):
@@ -53,6 +54,8 @@ Source: [How to Scale SVG](https://css-tricks.com/scale-svg/)
   <dd>When there is a viewBox, preserveAspectRatio describes how the image should scale if the aspect ratio of the viewBox doesn’t match the aspect ratio of the viewport.</dd>
   <dt>Presentational Attributes</dt>
   <dd><code>svg</code> attributes, such as <code>fill</code> and <code>stroke</code>, that can be overridden by CSS.</dd>
+  <dt>Precision</dt>
+  <dd>An <code>svg</code> term for the number of decimal places that are used to place objects (among other things) within the <code>viewBox</code>.
 </dl>
 
 
