@@ -2,4 +2,4 @@
 
 [Starter Code](starter)
 
-[Finished Code](starter)
+[Finished Code](finished)
