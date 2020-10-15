@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+    }
+    main {
+      margin: auto;
+      width: 25vw;
+    }
+
+    input {
+      display: none;
+    }
+
+    svg path {
+      fill: black;
+      transform-origin: 50% 50%;
+    }
+
+    input:checked + label path {
+      fill: rebeccapurple;
+    }
+
+    .top, .bottom {
+      transition: all 250ms ease;
+    }
+
+    input:checked + label path.top, input:checked + label path.bottom {
+      /* display: none; */
+      opacity: 0;
+      transition: all 250ms ease;
+    }
+
+    .middle1, .middle2 {
+      transition: all 250ms ease;
+    }
+    
+    input:checked + label path.middle1 {
+      transform: rotate(45deg);
+      transform-origin: 50% 50%;
+      transition: transform 250ms ease;
+    }
+    input:checked + label path.middle2 {
+      transform: rotate(-45deg);
+      transform-origin: 50% 50%;
+      transition: transform 250ms ease;
+    }
+</style>
+</head>
+<body>
+  <main>
+    <input type="checkbox" name="menu" id="menu">
+    <label for="menu">
+      <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="top" d="M0 0H500V93H0V0Z" fill="black"/>
+        <path class="middle1" d="M0 204H500V297H0V204Z" fill="darkgrey"/>
+        <path class="middle2" d="M0 204H500V297H0V204Z" fill="darkgrey"/>
+        <path class="bottom" d="M0 407H500V500H0V407Z" fill="lightgrey"/>
+      </svg>
+    </label>
+  </main>
+</body>
+</html>
