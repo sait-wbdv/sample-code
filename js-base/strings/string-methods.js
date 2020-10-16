@@ -2,8 +2,8 @@
 /* Source: Free Code Camp
 https://youtu.be/VRz0nbax0uI */ 
 
-var stringOne = "freeCodeCamp is the best place to learn"
-var stringTwo = "frontend and backend development"
+let stringOne = "freeCodeCamp is the best place to learn"
+let stringTwo = "frontend and backend development"
 
 // charAt()
 console.log(stringOne.charAt(1))
@@ -66,5 +66,5 @@ console.log(stringOne.toLowerCase())
 console.log(stringOne.toUpperCase())
 
 // trim()
-var stringThree = "     Subscribe now!      ";
+let stringThree = "     Subscribe now!      ";
 console.log(stringThree.trim())
