@@ -75,7 +75,7 @@
       // Objective 2: Using string literals, print a statement in the following format:
       // `[number 1] [multiplied by|plus|minus|divided by] [number 2] equals [result]`
  
-      paragraph.innerHTML = `${form.num1.value} ${glue} ${form.num2.value} equals ${result}`;
+      paragraph.innerText = `${form.num1.value} ${glue} ${form.num2.value} equals ${result}`;
     }
 
     form.addEventListener('submit', formHandler);
