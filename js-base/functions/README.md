@@ -1,5 +1,5 @@
 ## Function Sample Code
-- [Declaration and invocation](https://github.com/sait-wbdv/sample-code/tree/master/js-base/functions/finished/1-declaration-invocation)
+- [Declaration and invocation](https://github.com/sait-wbdv/sample-code/tree/master/js-base/functions/finished/1-declaration-invocation.js)
 - [Parameters and arguments](https://github.com/sait-wbdv/sample-code/tree/master/js-base/functions/finished/2-parameter-argument.js)
 - [First class functions](https://github.com/sait-wbdv/sample-code/tree/master/js-base/functions/finished/3-first-class.js)
 - [Variable-scope](https://github.com/sait-wbdv/sample-code/tree/master/js-base/functions/finished/4-variable-scope.js)
