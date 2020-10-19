@@ -24,7 +24,7 @@ function greet() {
 Function expressions return the function as a value, which can later be assigned to a variable using the assignment operator `=`.
 
 ```js
-const greetMe = function() {
+const greet = function() {
 	console.log('Hi Tony!');
 }
 ```
