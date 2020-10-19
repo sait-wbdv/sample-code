@@ -1,5 +1,5 @@
 // Create a starter array
 
-// Join two arrays with .join()
+// Join two arrays with .concat()
 
-// Possible to split two arrays?
+// Split an array with .splice()
