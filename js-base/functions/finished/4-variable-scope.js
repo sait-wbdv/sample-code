@@ -11,10 +11,10 @@ function a() {
   return inside;
 }
 
-let outside = 'global';
+let outside = 'global scope';
 
 // Function is invoked
-const inside = a();
+a();
 
 // Error: inside is not defined
 console.log(inside);

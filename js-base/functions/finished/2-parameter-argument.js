@@ -12,10 +12,8 @@ const greetMe = function(name) {
 // function invoked with argument (value)
 greetMe('Tony');
 
-// passing an argument to an immediately invoked function expression (IIFE)
-// this is an advanced technique behind frameworks like jQuery
+// Advanced: passing an argument to an immediately invoked function expression (IIFE)
+// This is a technique used by frameworks like jQuery
 (function(name) {
   console.log(`Who ${name}?`);
 })('Tony')
-
-// Exercise: refactor the first two functions using function statements (IIFEs require a function expression)

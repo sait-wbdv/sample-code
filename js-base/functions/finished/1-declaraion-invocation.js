@@ -1,7 +1,6 @@
-// function statement
+// function declaration
 function greet() {
   console.log('Hi!');
-  // return 'returned';
 }
 // function invoked
 greet();
@@ -10,10 +9,11 @@ greet();
 const greetMe = function() {
 	console.log('Hi Tony!');
 }
+
 // function invoked
 greetMe();
 
-// immediately invoked function expression (IIFE)
+// Advanced: immediately invoked anonymous function expression (IIFE)
 (function() {
   console.log('Who dis?');
 })()
