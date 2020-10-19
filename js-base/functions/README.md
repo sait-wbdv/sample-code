@@ -20,7 +20,6 @@ function greet() {
 }
 ```
 
-
 ### Function Expression
 Function expressions return the function as a value, which can later be assigned to a variable using the assignment operator `=`.
 
@@ -28,4 +27,13 @@ Function expressions return the function as a value, which can later be assigned
 const greetMe = function() {
 	console.log('Hi Tony!');
 }
+```
+
+## Anonymous callback functions
+You will often see function expressions used to define anonymous callback functions:
+
+```js
+button.addEventListener('click',function(){
+  // code here
+});
 ```
