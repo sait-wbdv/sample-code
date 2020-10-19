@@ -1,9 +1,9 @@
 function greet(lang) {
-  if (lang == 'en') {
+  if (lang === 'en') {
 
     console.log('Hi');
 
-  } else if (lang == 'es') {
+  } else if (lang === 'es') {
 
     console.log('Hola!');
 
