@@ -9,14 +9,16 @@
 
   <script>
     const imgList = [237, 433, 577, 582, 593, 659, 718, 783, 790, 837, 1024, 1025, 1074, 1084]; 
-    let imgTemplate;
 
+    // Create a variable where we will store the html that will eventually be printed to the page
+
+
+    // Create a random integer between 0 and the length of the image list
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-    const rand = Math.floor(Math.random() * Math.floor(imgList.length));
 
-    imgTemplate = `<img src="https://picsum.photos/id/${imgList[rand]}/250/250" alt="Random Lorem Picsum">`;
+    // Using template literals and your random number, create a Lorem Picsum `img` html element, pointing the `src` to a random image ID from the animals array
 
-    document.querySelector('body').innerHTML = imgTemplate;
+    // Using `document.querySelector()` and `element.innerHTML`, print the html to the page.
 
   </script>
 </body>
