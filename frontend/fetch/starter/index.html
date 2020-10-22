@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello fetch()!</title>
+</head>
+<body>
+  <main>
+
+  </main>
+  <script>
+    // Execution phase begins after Creation Phase
+    // Javascript engine starts an Execution Stack for the following code.
+    const main = document.querySelector('main');
+
+    fetch('https://random.dog/woof.json')
+      // This function sends a network request to the Heap
+      
+      /*******************/
+      /* seconds pass... */  
+      /*******************/
+
+      // The JSON response is received (or not) and the following function is added to the Event Queue.
+      .then(function(response) {
+        // First step: format the raw JSON response into a javascript object using response.json()
+        console.log(response);
+        return response.json();
+      })
+      // The JSON response is coverted to a Javascript object asynchronously in case it's a big job.
+
+      /*********************/
+      /* milliseconds pass */  
+      /*********************/
+      
+      // Finally, we can act on the new data. The following function is added to the Event Queue. This happens looooong after our original script has been deleted.
+      .then(function(data) {
+        // Any code that needs `data` should be in this code block. Any code outside this block will have run and been completed eons ago.
+
+        console.log(data);
+      });
+    
+      console.log('Done executing. The execution stack is now empty.');
+  </script>
+</body>
+</html>
