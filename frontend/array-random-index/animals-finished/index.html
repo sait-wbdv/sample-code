@@ -9,12 +9,13 @@
 
   <script>
     const imgList = [237, 433, 577, 582, 593, 659, 718, 783, 790, 837, 1024, 1025, 1074, 1084]; 
-    let imgTemplate;
+    let outputHTML;
 
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-    const rand = Math.floor(Math.random() * Math.floor(imgList.length));
+    const randInteger = Math.floor(Math.random() * Math.floor(imgList.length));
 
-    document.querySelector('body').innerHTML = `<img src="https://picsum.photos/id/${imgList[rand]}/250/250" alt="Random Lorem Picsum">`;
+    outputHTML = `<img src="https://picsum.photos/id/${imgList[randInteger]}/250/250" alt="Random Lorem Picsum">`;
+
+    document.querySelector('body').innerHTML = outputHTML;
 
   </script>
 </body>
