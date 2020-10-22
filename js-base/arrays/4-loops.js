@@ -40,7 +40,7 @@ console.log(foundItem);
 const thomasPhotos = animals.filter(function(animal){
   return animal.credit === 'Thomas Lefebvre';
 })
-
+  
 console.log(thomasPhotos);
 
 // Make all photo credits lowercase using Array.map()
