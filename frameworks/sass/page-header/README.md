@@ -12,7 +12,7 @@ The above project is still in the "Brute Force" stage of development: it works, 
     - `_reset.scss`
     - `_fonts.scss`
     - `_nav.scss`
-4. Create a `main.scss` file and import the above parials.
+4. Create a `main.scss` file and `@import` the above parials.
 5. Convert CSS to Sass:
     - move colours and fonts into variables;
     - use nesting and `&` to cleanup declarations on the `nav` element;
