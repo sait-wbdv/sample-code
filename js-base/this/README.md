@@ -9,5 +9,5 @@
         - In the browser: `this` references the `window` global object.
         - In node: `this` references the Node global object (also accessible with the `global` keyword).
     - Inside an invoked _method_ ([object sample code](3-objects.js)): `this` points to its containing object.
-    - Inside an invoked function _that's inside_ a method: `this` is the same as it is in the Global Execution Context above, _not_ the containing object (which you would expect). Many think this part of Javascript is broken. Tony agrees. See this [fixed sample code](3-objects-fixed.js)) for a workaround.
+    - Inside an invoked function _that's inside_ a method: `this` is the same as it is for invoked functions, above, _not_ the containing object (which you would expect). Many think this part of Javascript is broken. Tony agrees. See this [fixed sample code](3-objects-fixed.js) for a workaround.
 3. **Best practice for beginners**: Don't use `this` unless you're _directly_ within an object method. Otherwise, stay away!
