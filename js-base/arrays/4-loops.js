@@ -28,6 +28,11 @@ const animals = [
   }
 ];
 
+// Loop through animals with Array.forEach()
+animals.forEach(function(animal){
+  console.log(animal.title);
+});
+
 // Find a tiger with Array.find()
 const foundItem = animals.find(function(animal){
   return animal.id === 593;
