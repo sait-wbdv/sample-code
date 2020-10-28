@@ -3,7 +3,7 @@ const operator = 'whatevs';
 const operand1 = 0;
 const operand2 = 0;
 
-// A placeholder for the result of the calculation, duh.
+// A placeholder for the result of the calculation.
 let result;
 
 // A closed if/else chain for each of the supported operations.
