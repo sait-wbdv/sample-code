@@ -1,4 +1,4 @@
-# 3 Stages of a `greet` feature
+# Three Stages of a `greet` feature
 1. [Loose code sitting in the main script](1-base.js)
     - This is not reusable code. Not is it maintainable. It alos might interfere with other code being executed in the same file.
 2. [`greet` as a function](2-function.js)
