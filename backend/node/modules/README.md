@@ -1,6 +1,6 @@
 # CommonJS Modules
 ## Examples
-1. [3 stages of `greet`](greet/README.md)
+1. [Three stages of `greet`](greet/README.md)
 
 ## Activities
 - Refactor the following command line apps so that they are modules:
