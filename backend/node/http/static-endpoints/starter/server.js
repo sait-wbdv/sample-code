@@ -9,7 +9,7 @@ const server = http.createServer(function(request,response) {
 
   if (parsed.path === '/' || parsed.path === `/index.html`) {
     response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
-    response.end(`<h1>Request URL: ${request.url}</h1>`);
+    response.end(`<h1>Home page</h1>`);
   } else {
     response.writeHead(404, {"Content-Type": "text/html; charset=utf-8"});
     response.end(`<h1>Page Not Found</h1>`);
