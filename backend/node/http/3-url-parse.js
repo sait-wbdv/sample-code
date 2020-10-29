@@ -7,7 +7,7 @@ const server = http.createServer(function(request,response) {
   const parsed = url.parse(request.url);
   console.log(parsed);
 
-  response.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
+  response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
 
   response.end(`<h1>Request URL: ${request.url}</h1>`);
 });
