@@ -1,10 +1,12 @@
-
+// Get these values from process.argv
 const operator = process.argv[2];
 const operand1 = parseInt(process.argv[3]);
 const operand2 = parseInt(process.argv[4]);
 
+// A placeholder for the result of the calculation.
 let result;
 
+// A closed if/else chain for each of the supported operations.
 if (operator === 'add') {
 
   result = operand1 + operand2;
@@ -27,4 +29,5 @@ if (operator === 'add') {
 
 }
 
+// The whole point!
 console.log(`The result is : ${result}`);
