@@ -16,12 +16,12 @@ Docker is an alternative to installing Node directly on your system. Here's how 
 
 This may take a few minutes the first time and lots of text should start flying across your screen. Make sure you do this in a coffee shop to impress the public.
 
-The window will eventually hang (i.e. become useless) saying "`Attaching to tech-careers`". This means your container is running and is available to ssh into.
+The window will eventually hang (i.e. become useless) saying "`Attaching to wbdv`". This means your container is running and is available to ssh into.
 
 3. SSH into your container. Open a new terminal window, navigate to the same directory and enter the following:
 
 ```shell
-$ docker exec -it tech-careers bash
+$ docker exec -it wbdv bash
 ```
 
 Your terminal prompt will now look different because you're now inside your virtual server! Proceed with the course material.
