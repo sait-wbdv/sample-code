@@ -11,6 +11,16 @@
 
 ## Level Up
 Add support for JSON endpoints:
-1. Extend the page above to include a JSON endpoint similar to [this example](../2-json-endpoint.js).
+1. Extend the server above to include a JSON endpoint similar to [this example](../2-json-endpoint.js).
 2. Set the endpoint to match `/api/v0/user/123`.
+3. Send the following (or similar, different, way different) object as the JSON body:
+
+    ```js
+    { 
+      id: 123, 
+      name: "Mandy Michael", 
+      email: "creativetext@example.com"
+    }
+    ```
+    
 3. Ensure the proper MIME Type and status codes are set.
