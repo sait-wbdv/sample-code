@@ -1,6 +1,6 @@
 # Activity: Static endpoints HTML with `url.parse()`
 ## Instructions
-1. Copy the [starter code](starter) into a new project directory.
+1. Copy the [starter code](starter/server.js) into a new project directory.
 2. Extend the supplied `if`/`else` blocks, to include HTML endpoints for the following pages:
     - Contact page: `/contact` or `/contact/index.html`
     - Team page: `/team` or `/team/index.html`
@@ -22,5 +22,5 @@ Add support for JSON endpoints:
       email: "creativetext@example.com"
     }
     ```
-    
+
 3. Ensure the proper MIME Type and status codes are set.
