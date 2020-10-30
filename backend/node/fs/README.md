@@ -1,7 +1,7 @@
 # File System Module
 ## Reading Files
 - [Reading a file synchronously](1-read-sync.js) (not recommended)
-- [Reading a file asynchronously using a callback](2-read-async.js)
+- [Reading a file asynchronously using a callback](2-read-async.js) (recommended)
 - [Reading a file asynchronously using a Promise](3-read-async-promise.js)
 
 ## Activities
