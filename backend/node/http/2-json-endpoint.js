@@ -5,8 +5,6 @@ const http = require("http");
 
 const server = http.createServer(function(request, response) {
 
-  response.setHeader("Access-Control-Allow-Origin", "*");
-
   // Set MIME Type for the payload/body
   response.writeHead(200, {"Content-Type": "application/json; charset=utf-8"});  
   
