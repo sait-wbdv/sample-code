@@ -1,14 +1,10 @@
 const http = require('http');
-// Load built-in `url` module
-const url = require('url');
 
 const server = http.createServer(function(request,response) {
-  // Convert the request URL into an object. This converts the request url into its component parts.
-  const parsed = url.parse(request.url);
-  console.log(parsed);
 
   response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
 
+  // Use the `request.url` property to gain access to the endpoint being requested. 
   response.end(`<h1>Request URL: ${request.url}</h1>`);
 });
 

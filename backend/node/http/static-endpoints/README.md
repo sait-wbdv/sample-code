@@ -1,7 +1,7 @@
 # Activity: Static endpoints HTML with `url.parse()`
 ## Instructions
 1. Copy the [starter code](starter/server.js) into a new project directory.
-2. Extend the supplied `if`/`else` blocks, to include HTML endpoints for the following pages:
+2. Extend the supplied `if`/`else` blocks to include HTML endpoints for the following pages:
     - Contact page: `/contact` or `/contact/index.html`
     - Team page: `/team` or `/team/index.html`
     - Product page: `/products` or `/products/index.html`
