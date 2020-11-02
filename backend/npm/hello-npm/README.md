@@ -1,4 +1,4 @@
-# Activity: Initialize a new npm project
+# Activity: Initialize a new project and install nodemon
 The goal of this activity is to install nodemon as a "dev dependency" so we don't have to manually stop and restart our node app everytime we want to test changes. This is a dev dependency because we only need this functionality on our local machines while we develop our application.
 
 ## Prerequisites
@@ -37,7 +37,7 @@ The goal of this activity is to install nodemon as a "dev dependency" so we don'
     - nodemon is not needed on production servers, which is why it's installed as a dev dependency; we only use it while we're developing our app. By installing it as a dev dependency, production servers will know not to install it when it deploys our application.
 9. To see nodemon in action, edit and save your `server.js` file. Notice that nodemon restarted your node app when you saved the file. You're well on your way to being a lazy coder.
 
-### Bonus Activity: Be even lazier
+### Level-up: Be even lazier
 Typing `nodemon server.js` is a nice way to avoid restarting our server constantly, but we can be even lazier by storing this command in a custom script:
 1. Open your `package.json` file in your editor.
 2. You should see something like this in the file:

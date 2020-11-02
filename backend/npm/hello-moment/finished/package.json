@@ -1,5 +1,5 @@
 {
-  "name": "hello-npm",
+  "name": "hello-moment",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
   }
 }
