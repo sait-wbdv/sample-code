@@ -27,4 +27,4 @@ See: [Anatomy of a `package.json` File](https://www.digitalocean.com/community/t
 ## Activities
 - [Initialize a new project and install nodemon](hello-npm)
 - [Install momentjs in an existing project](hello-moment)
-- [`npm install`](hello-npm-install)
+- [Installing the dependencies of an existing project with `npm install`](hello-npm-install)
