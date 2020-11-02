@@ -10,23 +10,19 @@ The goal of this activity is to install nodemon as a "dev dependency" so we don'
 3. Navigate to this directory using your terminal.
 4. Initialize a new NPM project with the following command:
 
-    ```shell
-    $ npm init -y
-    ```
-    
-    - `-y` skips the set up questions; defaults are fine for now.
+        $ npm init -y
+    `-y` skips the set up questions; defaults are fine for now.
 
 5. A `package.json` file was created in the current directory. This directory is now an NPM project. See: [Anatomy of a `package.json` File](https://www.digitalocean.com/community/tutorials/nodejs-package-json) on Digital Ocean for a description of the items in this file.
-6. Install nodemon with the following command:
+6. Install Express with the following command:
 
     ```shell
-    $ npm install nodemon --save-dev
+    $ npm i nodemon --save-dev
     ```
 
-    - `--save-dev` adds nodemon as a development dependency in `package.json` since it is not needed for the production server.
-    - Note: `server.js` does not need `nodemon` to run. Developer dependencies often fall into the quality-of-life bucket.
-7. A `node-modules` directory was created in the current directory. This is where npm will store your dependencies.
-8. To run `server.js` with nodemon, enter the following terminal command:
+    - `--save-dev` adds nodemon as a development dependency in `package.json` since it is not needed for the production server. 
+7. A `node-modules` directory was created in the current directory. This is where NPM will store your dependencies.
+8. To run your application in "development" mode (so that nodemon), run the following command in your terminal:
 
     ```shell
     $ nodemon server.js
@@ -48,7 +44,7 @@ Typing `nodemon server.js` is a nice way to avoid restarting our server constant
       "start": "node server.js"
     }
     ```
-
+    - These are shortcuts that we can run using npm. For example, the `start` script will run with the command `npm start`.
 3. Add a third script called `dev` (or similar) that starts your app using nodemon. When you're finished your `scripts` object should look something like this:
 
     ```js
@@ -58,11 +54,8 @@ Typing `nodemon server.js` is a nice way to avoid restarting our server constant
       "dev": "nodemon server.js"
     }
     ```
-
 4. Save `package.json` and test your new script by entering this command in your terminal:
 
     ```shell
     $ npm run dev
     ```
-  
-  - Unlike `npm start` our custom scripts need to be run with the command: `npm run <script-name>`.

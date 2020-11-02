@@ -1,5 +1,12 @@
 # NPM (Node Package Manager)
 
+### TDLR; npm best practices
+- Don't initialize projects within projects.
+- Add `node_modules` to your `.gitignore` file. This directory stores all your dependencies (often lots of files) which should not be committed to your repository.
+- Commit `package.json` and `package-lock.json` to your repository.
+- Don't manually edit `package-lock.json`.
+- Update `package.json` by the command line (or other tool) unless you're comfortable editing the file manually (see activities!).
+
 ## Introduction to npm
 npm is the largest software package registry in the world. According to the [npm Wikipedia page](https://en.wikipedia.org/wiki/Npm_(software)) and [this Linux.com article](https://www.linux.com/news/state-union-npm/)
 - npm, Inc. is a subsidiary of GitHub, which is itself a subsidiary of Microsoft.
@@ -19,3 +26,5 @@ See: [Anatomy of a `package.json` File](https://www.digitalocean.com/community/t
 
 ## Activities
 - [Initialize a new project and install nodemon](hello-npm)
+- [Install momentjs in an existing project](hello-moment)
+- [`npm install`](hello-npm-install)
