@@ -5,6 +5,8 @@
 3. You have a static website of your choice ready to put in the `public` directory mentioned below.
 
 ## Code Walkthrough
+See: [`server.js`](server.js)
+
 ### Load dependencies
 Once you have installed a dependency into your project (see Prerequisites above), you still have to load it into your app.
 

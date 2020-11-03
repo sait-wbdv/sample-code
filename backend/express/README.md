@@ -8,12 +8,12 @@ All of the activities in this directory assume that you have installed `express`
 ## Installing Express from scratch
 If you're starting from scratch follow these instructions.
 
-## Prerequisites
+### Prerequisites
 1. There is no `package.json` file nor a `node_modules` file present in the project root directory.
 2. You have an entry page (i.e. `server.js`) present in a project directory.
 
-## Instructions
-1. Navigate to this directory using your terminal.
+### Instructions
+1. Navigate to your project directory using your terminal.
 2. Initialize a new NPM project with the following command:
 
     ```shell
