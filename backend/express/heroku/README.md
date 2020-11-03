@@ -3,15 +3,6 @@
 1. You have created a [free Heroku account](https://signup.heroku.com/).
 2. You have an express app published to a remote repository on GitHub. If not, you can clone [this one](https://github.com/sait-wbdv/hello-express).
 3. There is a `package.json` file present in your project root directory.
-4. You have a `start` script defined in your `package.json` file:
-
-    ```json
-    "scripts": {
-        "start": "node server.js"
-      },
-    ```
-
-    - Note: this may be an outdated requirement. Heroku now seems to work just fine without it?
 
 ## Instructions
 1. In the Dashboard: New > Create new app

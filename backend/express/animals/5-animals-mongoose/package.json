@@ -2,7 +2,7 @@
   "name": "labs",
   "version": "1.0.0",
   "description": "This site can be accessed at [Heroku link here]. It is a collection of sample code illustrating common use cases.",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "dotenv": "^8.2.0",
     "ejs": "^3.1.3",
