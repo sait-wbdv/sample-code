@@ -7,8 +7,8 @@ The goal of this activity is to install nodemon as a "dev dependency" so we don'
 
 ## Instructions
 1. Copy the [starter code](starter/server.js) into a new project directory.
-3. Navigate to this directory using your terminal.
-4. Initialize a new NPM project with the following command:
+2. Navigate to this directory using your terminal.
+3. Initialize a new NPM project with the following command:
 
     ```shell
     $ npm init -y
@@ -16,8 +16,8 @@ The goal of this activity is to install nodemon as a "dev dependency" so we don'
     
     - `-y` skips the set up questions; defaults are fine for now.
 
-5. A `package.json` file was created in the current directory. This directory is now an NPM project. See: [Anatomy of a `package.json` File](https://www.digitalocean.com/community/tutorials/nodejs-package-json) on Digital Ocean for a description of the items in this file.
-6. Install nodemon with the following command:
+4. A `package.json` file was created in the current directory. This directory is now an NPM project. See: [Anatomy of a `package.json` File](https://www.digitalocean.com/community/tutorials/nodejs-package-json) on Digital Ocean for a description of the items in this file.
+5. Install nodemon with the following command:
 
     ```shell
     $ npm install nodemon --save-dev
@@ -25,8 +25,8 @@ The goal of this activity is to install nodemon as a "dev dependency" so we don'
 
     - `--save-dev` adds nodemon as a development dependency in `package.json` since it is not needed for the production server.
     - Note: `server.js` does not need `nodemon` to run. Developer dependencies often fall into the quality-of-life bucket.
-7. A `node-modules` directory was created in the current directory. This is where npm will store your dependencies.
-8. To run `server.js` with nodemon, enter the following terminal command:
+6. A `node-modules` directory was created in the current directory. This is where npm will store your dependencies.
+7. To run `server.js` with nodemon, enter the following terminal command:
 
     ```shell
     $ nodemon server.js
@@ -35,7 +35,7 @@ The goal of this activity is to install nodemon as a "dev dependency" so we don'
     - Notice that previously, we started our apps with `node server.js`. 
     - `nodemon server.js` does the same thing as `node server.js` but it also listens for changes to our files. It will restart our app whenever we save a file.
     - nodemon is not needed on production servers, which is why it's installed as a dev dependency; we only use it while we're developing our app. By installing it as a dev dependency, production servers will know not to install it when it deploys our application.
-9. To see nodemon in action, edit and save your `server.js` file. Notice that nodemon restarted your node app when you saved the file. You're well on your way to being a lazy coder.
+8. To see nodemon in action, edit and save your `server.js` file. Notice that nodemon restarted your node app when you saved the file. You're well on your way to being a lazy coder.
 
 ### Level-up: Be even lazier
 Typing `nodemon server.js` is a nice way to avoid restarting our server constantly, but we can be even lazier by storing this command in a custom script:
