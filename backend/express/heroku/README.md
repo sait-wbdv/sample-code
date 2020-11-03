@@ -20,7 +20,5 @@
     
 3. In the Dashboard: Under Deploy > Deployment method, select Github and sign in with your preferred GH account.
 4. Once you're signed in, select the GH repo that contains the app you'd like to deploy.
-5. Either:
-    1. Enable Automatic Deploys to have Heroku deploy your repo any time it notices an update.
-    2. Manually deploy: select the branch and click Deploy Branch. Note: there is a limit to how many times you can deploy your app per minute.
+5. Manually deploy branch: select the branch and click Deploy Branch. Note: there is a limit to how many times you can deploy your app per minute.
 6. When Heroku is done doing its business, click View App and hopefully you don't receive an error.
