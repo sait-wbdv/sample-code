@@ -1,7 +1,7 @@
 # Hello express
 ## Prerequisites
 1. There is a `package.json` file present in your project root directory.
-2. `express` is installed as a dependency and is present in `node_modules`
+2. `express` is installed as a dependency and is present in `node_modules`. If not, run `npm install` from the project root directory (the one with the `package.json` file in it).
 3. You have a static website of your choice ready to put in the `public` directory mentioned below.
 
 ## Code Walkthrough

@@ -30,7 +30,7 @@ app.get('/:id', function(request, response){
 
 app.use(function(request, response, next) {
   response.status(404);
-  reresponses.send('404: File Not Found');
+  response.send('404: File Not Found');
 });
 
 const PORT = process.env.PORT || 3000;

@@ -10,6 +10,7 @@ app.get('/', function(request, response){
   response.render('animal-list',{});
 })
 
+// There are better ways of doing this...
 app.get('/puppy.html', function(request, response){
   response.render('animal-single',{title: 'Puppy', id: 237});
 })
