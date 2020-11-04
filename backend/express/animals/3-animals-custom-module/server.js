@@ -7,12 +7,12 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', function(request, response){
+app.get('/animals', function(request, response){
   response.render('animal-list',{});
 })
 
 // https://expressjs.com/en/api.html#req.params
-app.get('/:id', function(request, response){
+app.get('/animals/:id', function(request, response){
 
   // https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects
   const animal = animals.find(function(item) {

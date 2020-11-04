@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
 });
 
 // Set port preferrence with default
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // Start server
 app.listen(PORT, function(){
