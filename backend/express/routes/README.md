@@ -30,7 +30,7 @@ There is no other functional difference between these handlers:
 
 ## Activities
 ### Activity 1: Postman Practice
-1. Copy the code in this directory into a new project folder.
+1. Copy the [Standard CRUD Methods](crud) example into a new project folder.
 2. Launch the server and try to activate each endpoint handler using Postman.
     - Take note of the `Content-type`
 3. Try changing the output inside `response.send()`. For example, try changing `GET request: Read data` to:
@@ -48,10 +48,10 @@ There is no other functional difference between these handlers:
 
     3. Create a new `app.get()` handler that matches a static file located in `public`, which one wins? 
     4. Try moving the middleware _after_ the method handlers. Is there any change in behaviour?
-    
-### Activity 2: Register POST request 
+
+### Activity 2: Register form POST request 
 1. Find your Register and Login assignment from CPNT 260.
-2. Using the [subscribe example](subscribe) as a starting point, create a new Express project and add your assignment files to `public`.
+2. Using the [subscribe example](post-requests/subscribe) as a starting point, create a new Express project and replace the contents of `public` with your assignment files.
 3. To the Register `form`:
     1. Add an `action` attribute of `users`;
     2. Add a `method` attribute of `post`.
@@ -59,4 +59,5 @@ There is no other functional difference between these handlers:
     1. Add `express.urlencoded()` middleware near the top of the file;
     2. Create a `app.post` handler for `/users`.
     3. Inside this handler, send a personalized response back to the user (but maybe don't send the password).
-5. Try changing the form `method` to `get`. What happens?
+5. Submit the form to see the customized response.
+6. Try changing the form `method` to `get`. What happens? Why is `post` better?
