@@ -45,11 +45,11 @@ See: [Deprecation of the body-parser module in Express <= 4.15 (and un-deprecati
 1. Find your Register and Login assignment from CPNT 260.
 2. Using the [subscribe example](post-requests/subscribe) as a starting point, create a new Express project and replace the contents of `public` with your assignment files.
 3. To the Register `form`:
-    1. Add an `action` attribute of `users`;
+    1. Add an `action` attribute of `/users`;
     2. Add a `method` attribute of `post`.
 4. In `server.js`:
     1. Add `express.urlencoded()` middleware near the top of the file;
     2. Create a `app.post` handler for `/users`.
     3. Inside this handler, send a personalized response back to the user (but maybe don't send the password).
 5. Submit the form to see the customized response.
-6. Try changing the form `method` to `get`. What happens? Why is `post` better?
+6. Try adding more form controls such as radio buttons, chekboxes, select menus, etc.
