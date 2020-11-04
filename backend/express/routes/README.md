@@ -28,8 +28,8 @@ There is no other functional difference between these handlers:
 - `app.put()`
 - `app.delete()`
 
-## Activities
-### Activity 1: Postman Practice
+## Activity
+### Postman Practice
 1. Copy the [Standard CRUD Methods](crud) example into a new project folder.
 2. Launch the server and try to activate each endpoint handler using Postman.
     - Take note of the `Content-type`
@@ -48,16 +48,3 @@ There is no other functional difference between these handlers:
 
     3. Create a new `app.get()` handler that matches a static file located in `public`, which one wins? 
     4. Try moving the middleware _after_ the method handlers. Is there any change in behaviour?
-
-### Activity 2: Register form POST request 
-1. Find your Register and Login assignment from CPNT 260.
-2. Using the [subscribe example](post-requests/subscribe) as a starting point, create a new Express project and replace the contents of `public` with your assignment files.
-3. To the Register `form`:
-    1. Add an `action` attribute of `users`;
-    2. Add a `method` attribute of `post`.
-4. In `server.js`:
-    1. Add `express.urlencoded()` middleware near the top of the file;
-    2. Create a `app.post` handler for `/users`.
-    3. Inside this handler, send a personalized response back to the user (but maybe don't send the password).
-5. Submit the form to see the customized response.
-6. Try changing the form `method` to `get`. What happens? Why is `post` better?
