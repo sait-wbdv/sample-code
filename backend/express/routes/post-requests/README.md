@@ -1,5 +1,5 @@
-# Standard CRUD methods
-*Sample Code**: [Subscribe Form](subscribe)
+# Sample POST request server
+**Sample Code**: [Subscribe Form](subscribe)
 
 ## Handling POST requests
 `POST` requests map to the _Create_ action in CRUD and are a popular way to send form data to a server. When a `form` has a `method` attribute set to `post`, it will send a message body along with the request that contains the form data. 
@@ -39,15 +39,3 @@ We will actually _do_ something with this data when we cover Mongoose.
 There are a lot of tutorials that use the `body-parser` module. This is no longer relevant as of Expresss 4.16.
 
 See: [Deprecation of the body-parser module in Express <= 4.15 (and un-deprecation as of >=4.16)](https://stackoverflow.com/questions/24330014/bodyparser-is-deprecated-express-4)
-
-## Activities
-1. Find your Register and Login assignment from CPNT 260.
-2. Using the [subscribe example](subscribe) as a starting point, create a new Express project and add your assignment files to `public`.
-3. To the Register `form`:
-    1. Add an `action` attribute of `users`;
-    2. Add a `method` attribute of `post`.
-4. In `server.js`:
-    1. Add `express.urlencoded()` middleware near the top of the file;
-    2. Create a `app.post` handler for `/users`.
-    3. Inside this handler, send a personalized response back to the user (but maybe don't send the password).
-5. Try changing the form `method` to `get`. What happens?
