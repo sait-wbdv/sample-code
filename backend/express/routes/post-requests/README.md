@@ -52,4 +52,4 @@ See: [Deprecation of the body-parser module in Express <= 4.15 (and un-deprecati
     2. Create a `app.post` handler for `/users`.
     3. Inside this handler, send a personalized response back to the user (but maybe don't send the password).
 5. Submit the form to see the customized response.
-6. Try adding more form controls such as radio buttons, chekboxes, select menus, etc.
+6. Try adding more form controls such as radio buttons, checkboxes, select menus, etc.
