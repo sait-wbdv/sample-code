@@ -12,7 +12,7 @@ app.get('/',function(request,response){
 });
 ```
 
-Is functionally equivalent to this `if` statement, except it's invoked as a callback function:
+Is functionally equivalent to this `if` statement:
 
 ```js
 if (request.method === 'GET' && request.url === '/') {
