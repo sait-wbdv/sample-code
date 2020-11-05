@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const { response } = require('express');
 const app = express();
 
 // The standard HTTP methods
@@ -14,6 +15,10 @@ app.post('/',function(request,response){
 
 app.put('/',function(request,response){
   response.send('PUT request: Update data');
+});
+
+app.patch('/',function(request,response){
+  response.send('PATCH request: Paritally update data');
 });
 
 app.delete('/',function(request,response){
