@@ -5,31 +5,68 @@ There are [many view engines](https://expressjs.com/en/resources/template-engine
 - [handlebars](https://github.com/pillarjs/hbs)
 
 ## EJS
-EJS (short for Embedded Javascript) is older but well established.
+EJS (short for Embedded Javascript) is older but well established. It allows you to embed vanilla Javascript into your templates. This makes them very powerfull... almost too powerful.
 
-### Installing and setting EJS
-Once use EJS as a view engine, you'll need to:
-1. Install the `ejs` module from the command line:
+See [How To Use EJS to Template Your Node Application](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application) for the basics.
 
-    ```shell
-    $ npm install ejs
-    ```
-2. Load the module at the top of `server.js`:
+### Target directory structure
 
-    ```js
-    const ejs = require('ejs');
-    ```
-3. Set `ejs` as your view engine after you've created your app with `const app = express();`:
+```
+- public
+- views
+--- partials
+----- footer.ejs
+----- head.ejs
+----- header.ejs
+--- pages
+----- index.ejs
+----- about.ejs
+- package.json
+- server.js
+```
 
-    ```js
-    app.set('view engine', 'ejs');
-    ```
+### `response.render()`
+When using a view engine, `response.send()` will be replaced by `response.render()` in our endpoint handlers.
 
-### `app.render()`
+```js
+response.render('product-page.ejs',{title: 'Your Product Here', price: 9.99});
+```
 
+`product-page.ejs` is the template, which probably includes partial templates inside it, that will: 
+1. accept variables from your code from:
+    - its second argument, which **must be an object**,
+    - the `response.locals` object,
+    - other sources you can look up;
+2. be compiled into an HTML page, and;
+3. be sent as a `text/html` response to the client. The client can't tell the difference between a static HTML page and one compiled from a view engine.
 
-### Top EJS tags
+### EJS Templates
+EJS is Tony's view engine of choice but he's a boomer. In the world of tech fashion, many in our industry see EJS as outdated (it kind of is). But, it's just fine to start out on. Feel free to use another view engine (at your own risk) such as Pug or handlebars.
+
+### Top EJS Tags
 EJS supports many tags but these three are used most of the time:
-- `<% %>`: Inject javascript into HTML (used for flow control, not outting variables).
 - `<%= %>`: Output a variable.
+
+    ```html
+    <strong><%= product.name %></strong>
+    ```
 - `<%- %>`: Include a template partial, among other things we won't worry about.
+    
+    ```
+    <header>
+      <%- include('../partials/header'); %>
+    </header>
+    ```
+
+- `<% %>`: Inject javascript into HTML (used for flow control, not outputting variables).
+
+    ```html
+    <ul>
+    <% products.forEach(function(product) { %>
+        <li>
+            <strong><%= product.name %></strong>: 
+            <em><%= product.price %></em>
+        </li>
+    <% }); %>
+    </ul>
+    ```
