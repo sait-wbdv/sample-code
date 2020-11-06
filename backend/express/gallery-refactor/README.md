@@ -6,6 +6,14 @@ Refactor this [starter code](starter) to `fetch()` the image list instead of usi
     ```
     GET /api/animals
     ```
+
+    Like so:
+
+    ```js
+    app.get('api/animals', function(request, response){
+      // Step 3 goes here.
+    });
+    ```
 3. Inside this new endpoint handler:
     1. Move the `imgList` array variable from `client.js` into the endpoint handler you just created in `server.js`.
     2. Using `response.json` return the array as a JSON response to the browser.
