@@ -33,5 +33,4 @@ Refactor this [starter code](starter) to `fetch()` the image list instead of usi
     ```
 5. Move your `imgList.forEach()` loop and `gallery.innerHTML = outputHTML` code into the second `.then()` callback.
 6. Boot up your server see if it worked! 
-7. Troubleshoot problems:
-    - Is the problem on the server-side or client-side. Hint: Use Postman to test your endpoint first. If that's working, then try fixing your `client.js` code.
+7. Troubleshoot issues: is the problem on the server-side or client-side? Hint: Use Postman to test your endpoint first. If that's working, then try fixing your `client.js` code.
