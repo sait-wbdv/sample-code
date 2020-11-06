@@ -16,6 +16,7 @@ Refactor this [starter code](starter) to `fetch()` the image list instead of usi
     ```
 3. Inside this new endpoint handler:
     1. Move the `imgList` array variable from `client.js` into the endpoint handler you just created in `server.js`.
+        - **Level-up**: `require()` the array as a custom module!
     2. Using `response.json` return the array as a JSON response to the browser.
 4. In `client.js`, create a `fetch()` request for your new JSON endpoint:
 
