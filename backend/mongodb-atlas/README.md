@@ -1,16 +1,8 @@
 # MongoDB Atlas
 ## Getting Started
-<dl>
-  <dt>Database</dt>
-  <dd>Holds one or more collections.</dd>
-  <dt>Collection</dt>
-  <dd>A collection of documents. Collections are analogous to tables in relational databases.</dd>
-  <dt>Document</dt>
-  <dd>MongoDB stores data in the form of [JSON Documents] (technicaly BSON documents). Each document is analagous to rows in relational databases.</dd>
-</dl>
 
-### Creating and configuring an account
-1. Create an free account with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas). You will be prompted to set up your account:
+### Creating and configuring a MongoDB Atlas account
+1. Create an free account with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas). You will be prompted to set up your account (the Atlas interface will point you in the right direction):
     1. Build your first cluster
         - Organization: SAIT WBDV (or whatever)
         - Project Name: Animals (or whatever)
@@ -30,13 +22,15 @@
         - These are datasets that are more complex than we need for this course but they are a nice resource if you want to dip into heavier demo projects.
     5. Connect to your cluster -> `Connect your application`
         1. Copy the template connection string.
-        2. Save it in a `.env` file in your project in the following format (some details will be different than what you see):
+        2. Save it in a `.env` file in your project (see [hello-mongoose](hello-mongoose) below) in the following format (some details will be different than what you see):
 
             ```
             MONGODB_URL=mongodb+srv://aragog:<password>@cluster0.blmbb.mongodb.net/<dbname>?retryWrites=true&w=majority
             ```
 
-            - It's important that you use `MONGDB_URL` as a variable name; this is what Heroku uses to connect to Atlas.
+            - It's important that you use `MONGDB_URL` as a variable name; this is what Heroku uses to connect to Atlas (which we'll be doing tomorrow).
             - aragog is tony's database user; name yours whatever. Replace `<password>` with the `password` (that is totally not one you normally use) that you created in Step 1.2.
         3. Replace `<password>` with the password you used when you created your DB User in Step 2. You didn't forget it did you? If so, you can just re-create your db user.
-        4. Leave `<dbname>` for now.
+        4. Replace `<dbname>` with a name of your choice. Databases can hold more than one collection so the `<dbname>` can be general, like `wbdv` or `sait`.
+2. Connect your new Atlas cluster using the Mongoose package.
+    - See: [hello-mongoose](hello-mongoose)
