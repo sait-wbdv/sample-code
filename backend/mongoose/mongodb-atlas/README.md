@@ -33,4 +33,4 @@ We will not be installing MongoDB directly on our machines. Instead, we will be 
         3. Replace `<password>` with the password you used when you created your DB User in Step 2. You didn't forget it did you? If so, you can just re-create your db user.
         4. Replace `<dbname>` with a name of your choice. Databases can hold more than one collection so the `<dbname>` can be general, like `wbdv` or `sait`.
 2. Connect your new Atlas cluster using the Mongoose package.
-    - See: [hello-mongoose](hello-mongoose)
+    - See: [hello-mongoose](../hello-mongoose)
