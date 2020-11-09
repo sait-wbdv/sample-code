@@ -33,7 +33,7 @@ And we want to generate a gallery of Lorem Picsum images in a web page. There ar
     ```html
     <div class="gallery">
     <% images.forEach(function(image) { %>
-      <img src="https://picsum.photos/id/${image}/500">
+      <img src="https://picsum.photos/id/<%= image %>}/500">
     <% }); %>
     </div>
     ```

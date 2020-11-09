@@ -28,7 +28,7 @@ We will not be installing MongoDB directly on our machines. Instead, we will be 
             MONGODB_URL=mongodb+srv://aragog:<password>@cluster0.blmbb.mongodb.net/<dbname>?retryWrites=true&w=majority
             ```
 
-            - It's important that you use `MONGDB_URL` as a variable name; this is what Heroku uses to connect to Atlas (which we'll be doing tomorrow).
+            - It's important that you use `MONGODB_URL` as a variable name; this is what Heroku uses to connect to Atlas (which we'll be doing tomorrow).
             - aragog is tony's database user; name yours whatever. Replace `<password>` with the `password` (that is totally not one you normally use) that you created in Step 1.2.
         3. Replace `<password>` with the password you used when you created your DB User in Step 2. You didn't forget it did you? If so, you can just re-create your db user.
         4. Replace `<dbname>` with a name of your choice. Databases can hold more than one collection so the `<dbname>` can be general, like `wbdv` or `sait`.
