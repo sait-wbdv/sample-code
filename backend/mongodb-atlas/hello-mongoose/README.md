@@ -4,7 +4,7 @@
 2. The following modules are installed and are present in `node_modules`:
     - `mongoose`
     - `dotenv`
-3. You've created a [MongoDB Atlas] account and have completed the [setup steps](../).
+3. You've created a [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account and have completed the [setup steps](../).
 4. You've saved your Atlas connection string in a `.env` file in the root of your project directory. A [`.env-sample`](.env-sample) has been provided as a template.
 
 ## Code Walkthrough
@@ -20,14 +20,12 @@ const mongoose = require('mongoose');
 
 ```js
 const dotenv = require('dotenv').config();
-
-const mongoDB = process.env.MONGODB_URL;
 ```
 
 Using the Atlas connection string, we configure the connection to our Atlas database.
 
 ```js
-mongoose.connect(mongoDB, { useUnifiedTopology: true,useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true,useNewUrlParser: true });
 
 const db = mongoose.connection;
 ```

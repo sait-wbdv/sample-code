@@ -1,7 +1,5 @@
 # MongoDB Atlas
-## Getting Started
-
-### Creating and configuring a MongoDB Atlas account
+## Creating and configuring a MongoDB Atlas account
 1. Create an free account with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas). You will be prompted to set up your account (the Atlas interface will point you in the right direction):
     1. Build your first cluster
         - Organization: SAIT WBDV (or whatever)
