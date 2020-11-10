@@ -7,5 +7,11 @@ This is a sample import script you can use to import data into your MongoDB data
 ## Activities: Refactor and Deploy
 1. The Mongoose model listed in `./model/animal.js` does not match the data in `./seeds/animals.js` file. Modify the model to match the data structure of the objects listed in the array.
 2. Create a `server.js` that will use this animals data. Use [hello express](../../express/hello-express) as starter code.
+    1. Install and load
+        - `mongoose`
+        - `dotenv`
+        - `ejs`
+    2. Load `./models/animal.js`
+    3. Connect to Atlas
 3. Add a single endpoint, `GET /api/v0/animals` that returns the entire list of animals as a JSON response.
 4. Deploy this app to Heroku, using MongoDB Atlas as a backend.
