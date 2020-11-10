@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 
 // Import seed data
-const dbSeed = require(`./seeds/animals.js`);
+const dbSeed = require(`./seeds/definitions.js`);
 
 // Define model
-const Animal = require(`./models/animal.js`);
+const Definition = require(`./models/definition.js`);
 
 /*******************************/
 /* Mongoose/MongoDB Connection */
@@ -27,7 +27,7 @@ db.once('open', function() {
 
 });
 
-Animal.insertMany(dbSeed, function(error, animal) {
+Definition.insertMany(dbSeed, function(error, definition) {
   console.log('Data import completed.')
   mongoose.connection.close();
 });
