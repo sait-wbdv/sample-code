@@ -1,0 +1,16 @@
+{
+  "name": "animals-import",
+  "version": "1.0.0",
+  "main": "import.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.13"
+  }
+}
