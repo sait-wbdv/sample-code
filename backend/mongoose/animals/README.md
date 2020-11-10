@@ -12,6 +12,6 @@ This is a sample import script you can use to import data into your MongoDB data
         - `dotenv`
         - `ejs`
     2. Load `./models/animal.js`
-    3. Connect to Atlas
+    3. Connect to Atlas just after the `express.static()` middleware.
 3. Add a single endpoint, `GET /api/v0/animals` that returns the entire list of animals as a JSON response.
 4. Deploy this app to Heroku, using MongoDB Atlas as a backend.
