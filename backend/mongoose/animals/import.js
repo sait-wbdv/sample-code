@@ -27,7 +27,8 @@ db.once('open', function() {
 
 });
 
-Animal.insertMany(dbSeed, function(error, animal) {
+Animal.insertMany(dbSeed, function(error, animals) {
   console.log('Data import completed.')
+  console.log(animals);
   mongoose.connection.close();
 });

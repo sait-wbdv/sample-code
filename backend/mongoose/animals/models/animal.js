@@ -9,13 +9,8 @@ const gallerySchema = new mongoose.Schema(
   {
     id:           Number,
     title:        String,
-    source:       String,
-    fileName:     String,
-    attribution:  {
-      source: String,
-      credit: String,
-      url:  String
-    }
+    credit:       String,
+    url:          String
   }
 );
 

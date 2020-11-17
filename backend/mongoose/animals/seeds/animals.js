@@ -1,7 +1,7 @@
 const animals = [
   {
     id:     237,
-    title:  'Puppy',
+    title:  'Puppie',
     credit: 'André Spieker',
     url:    'https://unsplash.com/photos/8wTPqxlnKM4'
   },
