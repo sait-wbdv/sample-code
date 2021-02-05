@@ -34,6 +34,7 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
       max-width: 100%;
     }
     ```
+
 2. Change the `src` attribute on the images in the project to use an image size lower than the `lrg` size. Can you get away with `sm`?
 
 ---
@@ -67,8 +68,3 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
 3. Deploy your page to GH Pages and test your code on a real phone.
 
 --- 
-
-### Improving network performance with native lazy loading
-1. Baseline test of the starter page Performance.
-2. Add `loading="lazy"` to any `img` element that is "below the fold".
-3. Comparison test of the lazy loading page Performance.
