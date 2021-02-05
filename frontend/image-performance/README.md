@@ -6,22 +6,7 @@ Optimize the images in the above webpage.
 
 ---
 
-### Reduce "jank" with image `width` and `height` attributes
-1. For each image displayed in the project, locate/record the `width` and `height` of the file.
-2. Add `width` and `height` attributes to their respective `img` tags in the project.
-3. Reload the page to ensure each `img` has been marked up correctly.
-4. Purposely break your image paths by deleting a character from the `src` attribute.
-5. Reload your page, to confirm  the browser is recognizing your `width` and `height` attributes. There should be an empty in the page layout that is `width` x `height`.
-
----
-
-### Lazy load images
-1. To any image you'd like to load only when it's scrolled to: add the `loading="lazy"` attribute to the `img` element.
-2. That's it!
-
----
-
-### Define minimally responsive images
+### 1. Define minimally responsive images
 1. Set a `max-width` of `100%` on your images:
 
     ```css
@@ -34,7 +19,22 @@ Optimize the images in the above webpage.
 
 ---
 
-### Optimize image bandwidth with `srcset`
+### 2. Reduce "jank" with image `width` and `height` attributes
+1. For each image displayed in the project, locate/record the `width` and `height` of the file.
+2. Add `width` and `height` attributes to their respective `img` tags in the project.
+3. Reload the page to ensure each `img` has been marked up correctly.
+4. Purposely break your image paths by deleting a character from the `src` attribute.
+5. Reload your page, to confirm  the browser is recognizing your `width` and `height` attributes. There should be an empty in the page layout that is `width` x `height`.
+
+---
+
+### 3. Lazy load images
+1. To any image you'd like to load only when it's scrolled to: add the `loading="lazy"` attribute to the `img` element.
+2. That's it!
+
+---
+
+### 4. Optimize image bandwidth with `srcset`
 1. Using the [`srcset`](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/) attribute define the alternate images sizes that are available for a particular image. Starting with the small version: 
     
     ```html
