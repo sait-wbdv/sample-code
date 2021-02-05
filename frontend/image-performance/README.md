@@ -15,10 +15,14 @@ Optimize the images in the above webpage.
 
 ---
 
+{% comment %}
+
 ### Reduce file size with WebP
 Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`](https://github.com/sait-wbdv/sample-code/tree/master/frontend/image-performance/images) starting with the `lrg`. 
 
-**See [Squoosh Cheatsheet](https://sait-wbdv.github.io/cheatsheets/squoosh)**
+**See [Squoosh Cheatsheet](https://sait-wbdv.github.io/winter2021/cheatsheets/squoosh)**
+
+{% endcomment %}
 
 ---
 
@@ -35,17 +39,16 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
 ---
 
 ### Optimize image bandwidth with `srcset`
-1. Assign an optimal viewport width for each of the images widths located in the [images](https://github.com/sait-wbdv/sample-code/tree/master/frontend/image-performance/images) directory:
-    - `sm`: `500px`
-    - `md`: `1000px`
-    - `lrg`: `2000px`
-2. Using the [`srcset`](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/) attribute, override the default `src` image with your chosen images and viewport widths. For example, if we want `sm` images to be used when the viewport width is `500px`:
+1. Using the [`srcset`](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/) attribute define the alternate images sizes that are available for a particular image. Starting with the small version: 
     
     ```html
     <img src="default.jpg" alt="some image" srcset="small.jpg 500w">
     ```
 
-3. Repeat for the other image sizes, separated by commas. Don't be afraid to add line breaks and indentation to make your code more readable.
+    - `default.jpg` is the fallback in case the browser doesn't support `srcset`.
+    - The number associated with the `w` parameter should match the width of your image. The browser makes decisions based on this information.
+
+2. Repeat for the other image sizes, separated by commas. Don't be afraid to add line breaks and indentation to make your code more readable.
 
     ```html
     <img 
@@ -61,7 +64,7 @@ Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`
     **Consideration for Chrome**: It will load a larger image if you increase the viewport but will _not_ load a smaller image if you decrease the viewport.
     {:.notice--warning}
 
-4. Deploy your page to GH Pages and test your code on a real phone.
+3. Deploy your page to GH Pages and test your code on a real phone.
 
 --- 
 
