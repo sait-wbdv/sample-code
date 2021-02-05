@@ -15,14 +15,9 @@ Optimize the images in the above webpage.
 
 ---
 
-{% comment %}
-
-### Reduce file size with WebP
-Using [Squoosh.app](https://squoosh.app/) (or similar), compress these [`images`](https://github.com/sait-wbdv/sample-code/tree/master/frontend/image-performance/images) starting with the `lrg`. 
-
-**See [Squoosh Cheatsheet](https://sait-wbdv.github.io/winter2021/cheatsheets/squoosh)**
-
-{% endcomment %}
+### Lazy load images
+1. To any image you'd like to load only when it's scrolled to: add the `loading="lazy"` attribute to the `img` element.
+2. That's it!
 
 ---
 
