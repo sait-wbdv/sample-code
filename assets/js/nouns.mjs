@@ -1,5 +1,5 @@
 // Attibutions:
-// Snaoke Oil Card Game
+// Snake Oil Card Game
 // https://boardgamegeek.com/boardgame/113289/snake-oil
 export const nouns = [
   "bush",
