@@ -6,7 +6,7 @@ This activity is broken up into four sections:
 4. [Inject page-specific template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/4-local-variables) with `response.render()`.
 
 ## Step 1: Create a rendered view template
-1. Copy [1-starter](../1-starter) into a new project directory. It should have this directory structure:
+1. Copy [1-starter](../_starter) into a new project directory. It should have this directory structure:
 
     ```
     project-root
