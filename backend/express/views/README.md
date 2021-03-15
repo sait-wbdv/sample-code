@@ -1,15 +1,24 @@
 # View Engines
 The View Layer is a core component of the MVC design pattern and often encompasses the HTML, CSS and Javascript files that are sent to the browser. 
 
-**Template files** are a common method of producing dynamic HTML files from reusable source files.
+### Terminology
+Template files
+: A common method of producing dynamic HTML files from reusable source files.
 
-**View Engines** are syntax parsers that compile templates into HTML.
+Template partials
+: Repeated page fragments that can be added to any page.
+
+View Engine
+: A syntax parser that compiles templates into HTML.
 
 ---
 
 ### Key Takeaways for Express View Engines
 The following apply to all view engines (whether or not you use EJS):
-1. `response.render()` will compile a raw template file into an HTML file and send it as a `text/html` response to the client:
+1. Views should only be used to compile HTML. `css` and `js` files should be linked externally to keep concerns separated.
+2. Express is view engine agnostic. Although we're covering `ejs` in class, there are many alternatives.
+3. Each template engine has its own rules for adding template partials. 
+4. `response.render()` will compile a raw template file into an HTML file and send it as a `text/html` response to the client:
 
     ```js
     app.get('/', function(req, res){
@@ -20,12 +29,11 @@ The following apply to all view engines (whether or not you use EJS):
     - path is relative to `views` directory (by default)
     - `.ejs` extension is assumed
 
-2. Templates will accept variables from your express app from:
+5. Templates will accept variables from your express app from:
     - The second argument of `response.render()`, which **must be an object**,
     - The `response.locals` object which is available to all templates,
     - other sources you'll probably never use.
-3. The client can't tell the difference between a static HTML page and one compiled from a view engine.
-
+6. The client can't tell the difference between a static HTML page and one compiled from a view engine.
 
 ### Example directory structure
 
