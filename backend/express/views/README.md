@@ -56,6 +56,8 @@ project-root
   └ server.js
 ```
 
+- The shown `views` directory structure is a recommendation. Neither `express` nor `ejs` care how your organize your files.
+
 ---
 
 ## EJS: Embedded JavaScript engine
