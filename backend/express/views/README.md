@@ -17,7 +17,7 @@ View Engine
 The following apply to all view engines (whether or not you use EJS):
 1. Views should only be used to compile HTML. `css` and `js` files should be linked externally to keep concerns separated.
 2. Express is view engine agnostic. Although we're covering `ejs` in class, there are many alternatives.
-3. Each template engine has its own rules for adding template partials. 
+3. Each template engine has its own conventions. 
 4. `response.render()` will compile a raw template file into an HTML file and send it as a `text/html` response to the client:
 
     ```js
