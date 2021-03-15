@@ -96,7 +96,7 @@ EJS has [many tags](https://www.npmjs.com/package/ejs#user-content-tags) but the
 
 ### Activities
 The following activity is broken up into four sections:
-1. Create a rendered view template with `app.get()` and `response.render()`.
-2. Create and include view partials in a view template.
-3. Inject site-wide template variables with `app.use()` and `response.locals`.
-4. Inject page-specific template variables with `response.render()`.
+1. [Create a rendered view template](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/1-create-views) with `app.get()` and `response.render()`.
+2. [Create and include view partials](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/2-include-partials) in a view template.
+3. [Inject site-wide template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/3-global-variables) with `app.use()` and `response.locals`.
+4. [Inject page-specific template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/4-local-variables) with `response.render()`.

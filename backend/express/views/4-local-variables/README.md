@@ -1,7 +1,8 @@
 # EJS Activity: Inject global template variables
-1. Create a rendered view template with `app.get()` and `response.render()`.
-2. Create and include view partials in a view template.
-3. Inject site-wide template variables with `app.use()` and `response.locals`.
+This activity is broken up into four sections:
+1. [Create a rendered view template](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/1-create-views) with `app.get()` and `response.render()`.
+2. [Create and include view partials](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/2-include-partials) in a view template.
+3. [Inject site-wide template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/3-global-variables) with `app.use()` and `response.locals`.
 4. Inject page-specific template variables with `response.render()`.
 
 ## Assumptions
@@ -25,4 +26,4 @@
 
 ## Extras
 1. Move your route handlers to `routes/index.js` using `express.Router()`.
-2. Your finished code should look something like the code in [_finished]().
+2. Your finished code should look something like the code in [_finished](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/_finished).

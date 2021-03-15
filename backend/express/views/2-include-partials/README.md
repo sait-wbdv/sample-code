@@ -1,9 +1,9 @@
 # EJS Activity: Create view partials
-1. Create a rendered view template with `app.get()` and `response.render()`.
+This activity is broken up into four sections:
+1. [Create a rendered view template](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/1-create-views) with `app.get()` and `response.render()`.
 2. Create and include view partials in a view template.
-3. Inject site-wide template variables with `app.use()` and `response.locals`.
-4. Inject page-specific template variables with `response.render()`.
-
+3. [Inject site-wide template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/3-global-variables) with `app.use()` and `response.locals`.
+4. [Inject page-specific template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/4-local-variables) with `response.render()`.
 ## Assumptions
 - You've completed Step 1 above.
 
@@ -31,4 +31,4 @@
     - `header.ejs`: The `<header>` and `<nav>` elements.
 5. Fix the nav links that were broken if you followed the Pro Tip in Step 10 above.
 
-**Next Step: Inject global variables**
+**Next Step: [Inject global variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/3-global-variables)**

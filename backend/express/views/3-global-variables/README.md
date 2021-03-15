@@ -1,8 +1,9 @@
 # EJS Activity: Inject global template variables
-1. Create a rendered view template with `app.get()` and `response.render()`.
-2. Create and include view partials in a view template.
+This activity is broken up into four sections:
+1. [Create a rendered view template](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/1-create-views) with `app.get()` and `response.render()`.
+2. [Create and include view partials](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/2-include-partials) in a view template.
 3. Inject site-wide template variables with `app.use()` and `response.locals`.
-4. Inject page-specific template variables with `response.render()`.
+4. [Inject page-specific template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/4-local-variables) with `response.render()`.
 
 ## Assumptions
 - You've completed Steps 1 and 2 above.
@@ -32,4 +33,4 @@ Now that the template partials are setup we can inject variables into the templa
     - `head.ejs`: Add `siteTitle` to `<title>` element.
     - `footer.ejs`: Add `copyright` to `<footer>` element.
 
-**Next Step: Inject global variables**
+**Next Step: [Inject global variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/4-local-variables)**

@@ -1,9 +1,9 @@
 # EJS Activity: Getting started
-The following tutorial is broken up into four sections:
+This activity is broken up into four sections:
 1. Create a rendered view template with `app.get()` and `response.render()`.
-2. Create and include view partials in a view template.
-3. Inject site-wide template variables with `app.use()` and `response.locals`.
-4. Inject page-specific template variables with `response.render()`.
+2. [Create and include view partials](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/2-include-partials) in a view template.
+3. [Inject site-wide template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/3-global-variables) with `app.use()` and `response.locals`.
+4. [Inject page-specific template variables](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/4-local-variables) with `response.render()`.
 
 ## Step 1: Create a rendered view template
 1. Copy [1-starter](../1-starter) into a new project directory. It should have this directory structure:
@@ -88,4 +88,4 @@ The following tutorial is broken up into four sections:
 
     - Note: This breaks the navigation links but we'll fix these in the next section.
 
-**Next Step: Create view partials**
+**Next Step: [Create view partials](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/views/2-include-partials)**
