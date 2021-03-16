@@ -1,4 +1,4 @@
-// Get these values from process.argv
+// Get values from process.argv
 const operator = process.argv[2];
 const operand1 = parseInt(process.argv[3]);
 const operand2 = parseInt(process.argv[4]);

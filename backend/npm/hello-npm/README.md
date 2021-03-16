@@ -1,5 +1,5 @@
 # Activity: Initialize a new project and install nodemon
-The goal of this activity is to install nodemon as a "dev dependency" so we don't have to manually stop and restart our node app everytime we want to test changes. This is a dev dependency because we only need this functionality on our local machines while we develop our application.
+The goal of this activity is to install nodemon as a "dev dependency" so we don't have to manually stop and restart our node app every time we want to test changes. This is a dev dependency because we only need this functionality on our local machines while we develop our application.
 
 ## Prerequisites
 1. There is no `package.json` or `package-lock.json` file present in the project root directory.
