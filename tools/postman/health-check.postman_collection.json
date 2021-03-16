@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "b5f692ba-ade7-492a-85bd-1c75c05cca88",
+		"name": "Health Check",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ee7e4449-8b06-42d9-bbd3-54a4f3001a43",
+						"exec": [
+							"pm.test('Status received is ' + pm.response.code, function() {",
+							"    pm.expect(pm.response.code).equal(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": "    "
+			},
+			"response": []
+		},
+		{
+			"name": "GET /404",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fc36f5e6-961e-4433-8980-18717f10c004",
+						"exec": [
+							"pm.test('Status received is ' + pm.response.code, function() {",
+							"    pm.expect(pm.response.code).equal(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/404",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"404"
+					]
+				},
+				"description": "404 page, maybe"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /404.html",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fc36f5e6-961e-4433-8980-18717f10c004",
+						"exec": [
+							"pm.test('Status received is ' + pm.response.code, function() {",
+							"    pm.expect(pm.response.code).equal(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/404.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"404.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /404/test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fc36f5e6-961e-4433-8980-18717f10c004",
+						"exec": [
+							"pm.test('Status received is ' + pm.response.code, function() {",
+							"    pm.expect(pm.response.code).equal(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/404/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"404",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/animals",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0a342372-9153-46e0-8571-5b157f2e64d7",
+						"exec": [
+							"pm.test('Status received is ' + pm.response.code, function() {",
+							"    pm.expect(pm.response.code).equal(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
