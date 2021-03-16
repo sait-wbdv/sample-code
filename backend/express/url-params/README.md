@@ -26,4 +26,7 @@
 The following activity is broken up into two sections:
 1. [Create a rendered `list` route](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/url-params/1-create-list-route) with `app.get()` and `response.render()`.
 2. [Create a rendered `item` route](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/url-params/2-create-item-route) in a view template.
-3. Extras: [Complete TODOs](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/url-params/3-extra-todos)
+3. In the `partials/header` view, add a navigation link to the `/definitions` list.
+
+When you've completed these steps, your code should look something like the [finished code](_finished)
+- Extras: [Complete TODOs](https://github.com/sait-wbdv/sample-code/tree/master/backend/express/url-params/3-extra-todos)
