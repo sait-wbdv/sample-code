@@ -7,7 +7,7 @@ This activity is broken up into four sections:
 ## Assumptions
 - You've completed Step 1 above.
 
-## Step 2: Move repeating page elemets to template partials.
+## Step 2: Move repeating page elements to template partials.
 1. Create a template file named `footer.ejs` in the `partials` folder.
 2. Move the `<footer>` element from `index.ejs` into `partials/footer.ejs:
 
