@@ -1,3 +1,8 @@
+# Activity: RESTful `list` endpoint
+The following activity is broken up into two sections:
+1. Create a rendered `list` route with `app.get()` and `response.render()`.
+2. [Create a rendered `item` route](2-create-item-route) in a view template.
+
 ## Lists: Client-side render
 1. Create a view: `definition-list.ejs` with the following content including any needed partials:
 
@@ -22,3 +27,4 @@
     ```
 
     - Note: This is not a JSON route (those point to `/api/v0`). This renders an empty page that makes a `json` request later. We could render the list server-side but that takes up server resources. Instead we let the browser do it.
+3. In the `partials/header` view, add a navigation link to the `/definitions` list.
