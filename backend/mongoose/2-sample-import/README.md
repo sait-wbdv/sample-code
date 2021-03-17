@@ -1,9 +1,9 @@
 # Importing data into Atlas 
 ## Assumptions
-- [MongoDB Atlas account created and configured]().
+- [MongoDB Atlas account created and configured](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/1-atlas-getting-started).
 
 ## Option 1: Import data using MongoDB Compass
-1. Assumption: You've created a `json` file containing the data you'd like to import.
+1. Assumption: You've [created a `json` file](https://gist.github.com/acidtone/9ba1c784d5f78fdc9dc4df9c6f26bcf8) containing the data you'd like to import.
 2. [Install Compass](https://www.mongodb.com/products/compass)
 3. Add your connection string.
     - MongoDB Atlas will create this for you.
