@@ -2,14 +2,14 @@
 See: [MongoDB Basics](https://www.mongodb.com/basics)
 
 ## Terminology
-<dl>
-  <dt>Document</dt>
-  <dd>MongoDB stores data in the form of JSON Documents (technicaly BSON documents). Each document is analagous to a row in relational databases.</dd>
-  <dt>Collection</dt>
-  <dd>A collection of documents. Collections are analogous to tables in relational databases.</dd>
-  <dt>Database</dt>
-  <dd>Holds one or more collections.</dd>
-</dl>
+Document
+: MongoDB stores data in the form of JSON Documents (technically BSON documents). Each document is analagous to a row in a relational database.
+
+Collection
+: A collection of documents (i.e. a fancy folder). Collections are analogous to tables in relational databases.
+
+Database
+: Holds one or more collections.
 
 ## Cheat sheets and sample code
 1. [Creating and Setting up a MongoDB Atlas Account](mongodb-atlas)
