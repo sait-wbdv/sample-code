@@ -11,7 +11,8 @@ Collection
 Database
 : Holds one or more collections.
 
-## Cheat sheets and sample code
-1. [Creating and Setting up a MongoDB Atlas Account](mongodb-atlas)
-2. [Connecting to a MongoDB Atlas Cluster](hello-mongoose)
-3. [Getting Started with Mongoose](kitten-schema)
+## Setting up Mongoose and Atlas
+1. [Creating and Setting up a MongoDB Atlas Account](1-atlas-getting-started)
+2. Connecting to a MongoDB Atlas Cluster
+    - Clone the [hello-atlas](https://github.com/sait-wbdv/hello-atlas) repo and follow the instructions in the README.
+3. After completing the above steps, use the `hello-atlas` repo you created in Step 2 and follow the [Getting Started with Mongoose](https://mongoosejs.com/docs/) Kitten tutorial.
