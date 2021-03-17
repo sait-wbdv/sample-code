@@ -16,3 +16,4 @@ Database
 2. Connecting to a MongoDB Atlas Cluster
     - Clone the [hello-atlas](https://github.com/sait-wbdv/hello-atlas) repo and follow the instructions in the README.
 3. After completing the above steps, use the `hello-atlas` repo you created in Step 2 and follow the [Getting Started with Mongoose](https://mongoosejs.com/docs/) Kitten tutorial.
+4. [Import data into Atlas](2-sample-import)
