@@ -54,4 +54,4 @@ The Connection String holds all the information your application needs to connec
       - Change `myFirstDatabase` to `sait`, `winter-2021` or similar.
     - It's important that you use `MONGODB_URL` as a variable name; this is what Heroku uses to connect to Atlas (that's tomorrow).
 2. Connect your new Atlas cluster using the Mongoose package.
-- See: [hello-atlas](../2-hello-atlas)
+- See: [hello-atlas](https://github.com/sait-wbdv/hello-atlas)
