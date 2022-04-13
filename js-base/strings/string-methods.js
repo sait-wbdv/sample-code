@@ -20,10 +20,8 @@ console.log(stringOne.endsWith("to"))
 // fromCharCode()
 console.log(String.fromCharCode(114))
 
-
 // includes()
 console.log(stringTwo.includes("end"))
-
 
 // indexOf()
 console.log(stringTwo.indexOf("end"))
